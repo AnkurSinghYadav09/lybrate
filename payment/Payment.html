@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #paymentPage{
+            background-color: #eee;
+        }
+        #main_view_cart{
+            display: flex;
+            
+            margin-top:-20px;
+          
+        }
+        #h1tag{
+            display: block;
+            width: 60%;
+            height: 100px;
+            margin:0 100px 0 65px;
+            padding-top: 10px;
+            font-family: sans-serif;
+            font-weight:lighter;
+            margin: 70px 0 -30px 90px;
+            
+        }
+        #covid_lines{
+            display: block;
+            width: 60%;
+            height: 100px;
+            margin:0 98px 0 65px;
+            margin-top: -60px;
+            background-color: #FDF3E9;
+            border: 1px solid #dce0e0;
+            height: auto;
+            padding: 5px;
+        }
+        .payment_options{
+            
+            width: 60%;
+            height: auto;
+            margin:30px 12px 0 65px;
+            font-size: large;
+            padding: 5px 0 0 15px;
+            border: 1px solid #dce0e0;
+            background-color: #fff;
+            font-family: sans-serif;
+            font-weight: inherit;
+            color: inherit;
+            text-decoration: none;
+
+        }
+        .payment_options>p:nth-child(3){
+            margin-left: 20px;
+        }
+        #payment_details{
+            padding-top: 30px;
+            display: block;
+            width:30%;
+            margin-right: 50px;
+            /* background-color: #fff; */
+            box-sizing: border-box;
+            /* border: 1px solid #dce0e0; */
+            font-family: sans-serif;
+            font-weight: inherit;
+            color: inherit;
+            text-decoration: none;
+           
+        }
+        #order_summry{
+             background-color: #fff;
+             padding: 5px;
+             border: 1px solid #dce0e0;
+
+        }
+        .order_summary{
+           margin-left: 10px;
+        }
+        #amount_payable{
+            margin-top: 50px;
+            font-size: larger;
+        }
+       ul{
+            color: gray;
+            margin:-17px 0 0 -30px;
+            font-size: small;
+        }
+        /* #apply_promocode{
+
+        } */
+        #authanticate_product{
+           margin-top: 20px;
+           
+           
+        }
+        #authanticate_product>img{
+            width: 100%;
+            
+        }
+        #secured_by{
+            display: flex;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            background-color: #fff;
+            border: 1px solid #dce0e0;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        #secured_by>div{
+            justify-content: space-around;
+        }
+        #lybrateCash{
+            display: flex;
+            padding: 15px;
+            color: rgb(145, 143, 143);
+
+        }
+        #lybrateCash>div{
+            margin-left: 10px;
+        }
+        #lybrateCash>div>p{
+            margin-top: 2px;
+            font-size: small;
+        }
+        #lybrateCash>div>p:nth-child(2){
+            color: red;
+        }
+        .lybrateCash{
+            border: 1px solid grey;
+            border-radius: 3px;
+            background-color: #dce0e0;
+            height: 13px;
+            width: 13px;
+        }
+        .payment_options>div:nth-child(6){
+            margin: -8px 0 0px 20px; 
+            display: flex;
+        }
+        .choose{
+            font-size: small;
+            padding: 5px;
+            color: rgb(145, 143, 143);
+        }
+        .payment_process {
+            margin:10px 0 10px 10px;
+            font-size: 15px;
+            
+        }
+        .payment_process>img{
+            margin-bottom: -10px;
+            margin-left: 15px;
+            margin-right: 15px;
+            height: 30px;
+            width: 30px;
+        }
+        .payment_process~p{
+            margin-left: 90px;
+            font-size: small;
+            color: red;
+        }
+        .material-icons{
+           
+            margin-bottom: -10px;
+            margin-left: 15px;
+            margin-right: 15px;
+            height: 30px;
+            width: 30px;
+        }
+        .payment_button{
+            display: flex;
+            height: 70px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            width: 100%;
+            padding-right: 15px;
+            margin: 35px 0 0 -15px;
+            justify-content: flex-end;
+            
+        }
+        .payment_button>button{
+            padding: 10px;
+            color: red;
+            font-size: 15px;
+            border: 1px solid red;
+            font-weight: bold;
+            margin: 15px;
+            text-align: center;
+            cursor: pointer;
+          
+        }
+        #proceed{
+            background-color: red;
+            color: white;
+        }
+        #proceed:hover{
+            background-color: brown;
+        }
+        #viewAddressDetail:hover{
+            background-color: red;
+            color: white;
+        }
+        input{
+            cursor: pointer;
+        }
+        .order_summary{
+            display: flex;
+            justify-content: space-between;
+            margin-right: 20px;
+
+        }
+    
+        
+        </style>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        
+</head>
+<body>
+    <div id="paymentPage">
+        <h2 id="h1tag">Payment details</h2>
+    <p id="covid_lines">We are experiencing a delay in the shipment as we are managing our teams and delivery partner for COVID-19 measures. Many thanks for cooperating.</p>
+    <div id="main_view_cart">
+        <div class="payment_options">
+            <p >Payment Options</p>
+            <hr style="margin-left: -15px;">
+            <p>Your available LybrateCash</p>
+            <hr style="width: 95%; margin: auto;">
+            <div id="lybrateCash">
+                <div class="lybrateCash"></div>
+                <div>Use your Lybrate Cash
+                    <p>You have LybrateCash and can redeem LybrateCash equivalent to % of the amount payable.</p>
+                    <p>You have LybrateCash, Download Lybrate App to use your LybrateCash.</p>
+                </div>
+            </div>
+            <div>
+                <p>Payment Methods</p>
+                <p class="choose">(choose any one)</p>
+
+            </div>
+            <hr style="width: 95%; margin: auto;">
+           <form action="#">
+               <div  class="payment_process"><input type="radio" name="payment" id="debit_card">  <img src="https://assets.lybrate.com/q_auto,f_auto,w_46,h_46,c_pad/imgs/product/Homepage/Credit+and+debit+card.png"> <label for="">DebitCard/CreditCard/Net Banking/UPI</label></div>
+               <div class="payment_process"><input type="radio" name="payment"  id="paytm"> <img src="https://assets.lybrate.com/q_auto,f_auto,w_46,h_46,c_pad/imgs/product/Homepage/Paytm_logo.png" alt=""> <label for="">PayTM Wallet</label> </div>
+               <div class="payment_process"><input type="radio" name="payment"  id="mobikwik"> <img src="https://assets.lybrate.com/q_auto,f_auto,w_46,h_46,c_pad/imgs/product/Homepage/mobikwik.png" alt=""> <label for="">MobiKwik Wallet</label> </div>
+               <div class="payment_process"><input type="radio" name="payment"  id="olamoney"><img src="https://assets.lybrate.com/q_auto,f_auto,w_46,h_46,c_pad/imgs/product/Homepage/olamoney.png" alt=""> <label for="">OlaMoney Postpaid</label></div>
+               <div class="payment_process"><input type="radio"  name="payment" id="freecharge"><img src="https://assets.lybrate.com/q_auto,f_auto,w_46,h_46,c_pad/imgs/product/Homepage/freecharge.png" alt=""> <label for=""></label>Freecharge</div>
+               <div class="payment_process"><input type="radio"  name="payment" id="airtel"><img src="https://assets.lybrate.com/q_auto,f_auto,w_46,h_46,c_pad/imgs/product/Homepage/airtelmoney.png" alt=""> <label for="">Airtel Money</label></div>
+               <div class="payment_process"><input type="radio"  name="payment" id="amazon"><img src="https://assets.lybrate.com/q_auto,f_auto,w_46,h_46,c_pad/imgs/product/Homepage/amazonpay.png" alt=""> <label for="">Amazon Pay</label></div>
+               <div class="payment_process"><input type="radio" name="payment"  id="phonepey"><img src="https://assets.lybrate.com/q_auto,f_auto,w_46,h_46,c_pad/imgs/product/Homepage/phonepe.png" alt=""> <label for="">Phone Pe</label></div>
+               <div class="payment_process"><input type="radio" name="payment"  id="codprime"><img src="https://assets.lybrate.com/q_auto,f_auto,w_46,h_46,c_pad/imgs/product/Homepage/cod.png" alt=""> <label style="font-weight: bold;" for="">COD Prime</label><i class="material-icons">error_outline</i></div>
+               <div class="payment_process"><input type="radio" name="payment"  id="cod"><img src="https://assets.lybrate.com/q_auto,f_auto,w_46,h_46,c_pad/imgs/product/Homepage/cod.png" alt=""> <label style="font-weight: bold;" for="">Cash On Delivery(COD)</label></div>
+               <p>We urge you to consider online payment as cash notes can be a carrier for coronavirus infection.</p>
+           </form>
+           <div class="payment_button">
+              <div></div> <button id="viewAddressDetail">View Address Detail</button>
+               <button id="proceed" onclick="location.href='finalPayment.html'">Proceed</button>
+
+
+           </div>
+        </div>
+        <div id="payment_details">
+            <div id="order_summry">
+                <p class="order_summary">ORDER SUMMARY</p>
+                <hr>
+                <div id="totle_mrp" class="order_summary"><p >Total MRP</p></div>
+                <div id="shipping_charges" class="order_summary"> <div><p>Shipping Charges<ul>(Free shipping on orders above ₹500)</ul></p></div> </div>
+                <div id="discount" class="order_summary"><p>Discount</p> </div>
+                <hr style="width: 95%; text-align: center;">
+                <div id="cart_total" class="order_summary" ><p>Cart Total</p></div>
+                <div id="amount_payable" class="order_summary"><p>Amount Payable</p></div>
+                <hr style="width: 95%; text-align: center;">
+            </div>
+            <div id="apply_promocode"></div>
+            <div id="authanticate_product">
+                <img src="Screenshot 2022-03-29 224501.png" alt="">
+            </div>
+            <div id="secured_by">
+                <div><img src="https://www.lybrate.com/img/rapid-ssl.png" alt=""></div>
+                <div>  <img src="https://assets.lybrate.com/q_auto,f_auto/imgs/product/icons/PayPal_logo.png" alt=""></div>
+                <div> <img src="https://www.lybrate.com/img/payu-money.png" alt=""></div>
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+    
+</body>
+</html>
+<script>
+    var totle_mrp= document.createElement("p");
+    totle_mrp.innerText=400;
+    document.getElementById("totle_mrp").append(totle_mrp)
+
+
+    var shipping_charges = document.createElement("p");
+         if(totle_mrp.innerText<500){
+                shipping_charges.innerText=100;
+        }
+        else{
+               shipping_charges.innerText=0;
+        }
+    document.getElementById("shipping_charges").append(shipping_charges);
+    
+
+    var discount = document.createElement("p");
+    discount.innerText=100;
+    document.getElementById("discount").append(discount);
+   console.log()
+    
+    var cart_total=document.createElement("p");
+    cart_total.innerHTML=Number(totle_mrp.innerText)+Number(shipping_charges.innerText)-Number(discount.innerText);
+    document.getElementById("cart_total").append(cart_total);
+    
+
+    var amount_payable=document.createElement("p");
+    amount_payable.innerText=cart_total.innerText;
+    document.getElementById("amount_payable").append(amount_payable);
+    
+
+
+    document.getElementById("proceed").addEventListener("click",payableAmount)
+   
+    
+
+
+</script>
