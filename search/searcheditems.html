@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://www.lybrate.com/img/push-crew/logo_192_by_192.png">
+    <link rel="stylesheet" href="../footer/footer.css">
+    <link rel="stylesheet" href="search.css">
+    <link rel="stylesheet" href="../header footer/shopingheader.css">
+    <title>Search Results | Lybrate</title>
+</head>
+
+<body>
+    <div id="header-container"></div>
+
+    <div id="search-container">
+        <div id="search-key-word"></div>
+        <div id="search-results-div"></div>
+        <div id="no-results"></div>
+    </div>
+
+    <div id="footer-container"></div>
+</body>
+
+</html>
+
+<script type="module">
+    import shoppingheader from '../header footer/shoppingheader.js';
+    let header_container=document.getElementById("header-container");
+    header_container.innerHTML=shoppingheader();
+</script>
+
+<script src="../header footer/shoppingheader other js.js"></script>
+<script src="../header footer/inputsearch.js"></script>
+
+<script type="module">
+    import footerfun from "../footer/footer.js";
+    let footer=document.getElementById("footer-container");
+    footer.innerHTML=footerfun();
+</script>
+
+<script src="search.js"></script>

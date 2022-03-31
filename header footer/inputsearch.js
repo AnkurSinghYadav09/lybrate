@@ -3,13 +3,13 @@ const inputsearch=async()=>
     try
     {
         let input=document.getElementById("navbarsearch").value;
-        input=input.trim().split(" ");
-        for(let i=0; i<input.length; i++)
+        inputarr=input.trim().split(" ");
+        for(let i=0; i<inputarr.length; i++)
         {
-            input[i]=input[i].toLowerCase();
+            inputarr[i]=inputarr[i].toLowerCase();
         }
         
-        //console.log(input);
+        //console.log(inputarr);
 
         let childcare=await fetch(`../API's/child care.json`)
         let childcaredata=await childcare.json();
@@ -91,23 +91,23 @@ const inputsearch=async()=>
 
             let name=arr[i].productName.trim().split(" ");
 
-            if(input.length>1)
+            if(inputarr.length>1)
             {
-                for(let k=0; k<input.length; k++)
+                for(let k=0; k<inputarr.length; k++)
                 {
                     for(let j=0; j<name.length; j++)
                     {
                         name[j]=name[j].toLowerCase();
 
-                        if(input[0]===name[j])
+                        if(inputarr[0]===name[j])
                         {
-                            //console.log(name[j], input[k]);
+                            //console.log(name[j], inputarr[k]);
                             flag1=true;
                         }
 
-                        if(input[1]===name[j] && flag1===true)
+                        if(inputarr[1]===name[j] && flag1===true)
                         {
-                            //console.log(name[j], input[k]);
+                            //console.log(name[j], inputarr[k]);
                             flag2=true;
                             break;
                         }
@@ -126,15 +126,15 @@ const inputsearch=async()=>
             }
             else
             {
-                for(let k=0; k<input.length; k++)
+                for(let k=0; k<inputarr.length; k++)
                 {
                     for(let j=0; j<name.length; j++)
                     {
                         name[j]=name[j].toLowerCase();
 
-                        if(input[k]===name[j])
+                        if(inputarr[k]===name[j])
                         {
-                            //console.log(name[j], input[k]);
+                            //console.log(name[j], inputarr[k]);
                             flag1=true;
                         }
                     }
@@ -151,7 +151,20 @@ const inputsearch=async()=>
                 }
             }
         }
-        inputonfocus(bag, input, defaultprod);
+        
+        localStorage.setItem("searcheditems", JSON.stringify(bag));
+        localStorage.setItem("searchkeyword", input);
+
+        inputonfocus(bag, inputarr, defaultprod);
+
+        let searched=document.getElementById("navbarsearch");
+        searched.addEventListener("keypress", (event)=>
+        {
+            if(event.code==='Enter')
+            {
+                location.href="../search/searcheditems.html";
+            }
+        })
     }
 
 
@@ -236,4 +249,9 @@ const inputonfocusout=()=>
 {
     let focusdiv=document.getElementById("onfocuscontent");
     focusdiv.innerHTML=null;
+}
+
+const tosearchpage=()=>
+{
+    location.href="../search/searcheditems.html";
 }
