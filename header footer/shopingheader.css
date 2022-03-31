@@ -8,6 +8,7 @@
     {
         margin-bottom: 8px;
         background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
     #navbar
     {
@@ -29,7 +30,6 @@
         margin: auto;
         height: 33px;
         align-items: center;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
     #category>div>div
     {
