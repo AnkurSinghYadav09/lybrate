@@ -1,0 +1,97 @@
+#row1 {
+  margin-left: 30px;
+
+  width: 35%;
+  margin: auto;
+}
+.row {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.container {
+  display: grid;
+}
+h2 {
+  color: red;
+  text-decoration: none;
+}
+
+#submit > button {
+  width: 90%;
+  margin: 9px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  font-family: sans-serif;
+  border-radius: 20px;
+}
+
+b {
+  color: red;
+}
+
+.button:active:after {
+  box-shadow: 0 0 0 0 rgb(212, 24, 24);
+  position: absolute;
+  border-radius: 4em;
+  left: 0;
+  top: 0;
+  opacity: 1;
+  transition: 0s;
+}
+
+.button {
+  position: relative;
+  background-color: black;
+  border-radius: 4em;
+  font-size: 16px;
+  color: rgb(224, 27, 27);
+  padding: 0.8em 1.8em;
+  cursor: pointer;
+  user-select: none;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+}
+
+.button:hover {
+  transition-duration: 0.1s;
+  background-color: #3a3a3a;
+}
+
+.button:after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 4em;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.5s;
+  box-shadow: 0 0 10px 40px white;
+}
+
+#em {
+  width: 100%;
+  font-size: 16px;
+}
+#pass{
+   width: 100%;
+  font-size: 16px;
+}
+
+
+#signup:hover{
+    
+   color: darkred;
+}
+
+#footer-container{
+  border: 10px solid green;
+  margin-top: 30px;
+}
