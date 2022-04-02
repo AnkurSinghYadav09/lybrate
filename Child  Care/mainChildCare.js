@@ -120,19 +120,7 @@
                         let buttondiv = document.createElement("div")
                         buttondiv.setAttribute("class","buttondiv")
                         
-                        // let button = document.createElement("button");
-                        // button.innerText = "Add to cart";
-                        // button.setAttribute("class" , "addToCart")
-        
-                        // button.addEventListener("click" , function(){
-                        //   cartdata(ele);
-                        // });
-        
-        
-                        // alldiv.addEventListener("click", function() {
-                        //     getalldeatails(ele);
-                        // })
-                        
+                      
         
                         
                         let div = document.createElement("div");
