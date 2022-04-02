@@ -132,9 +132,9 @@
                         // });
         
         
-                        alldiv.addEventListener("click", function() {
-                            getalldeatails(ele);
-                        })
+                        // alldiv.addEventListener("click", function() {
+                        //     getalldeatails(ele);
+                        // })
                         
         
                         
