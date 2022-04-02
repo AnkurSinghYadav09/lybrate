@@ -254,8 +254,30 @@ allProductArr.map(function(ele){
        let pincodebtn = document.createElement("button")
        pincodebtn.setAttribute("class","pincodebtn")
        pincodebtn.innerText="check"
+       let checkoutpudivt=document.createElement("div");
+       checkoutpudivt.setAttribute("class", "checkoutpudiv")
+       pincodebtn.addEventListener("click", function()
+       {
+           
+           let checkoutput=document.createElement("p");
+           checkoutpudivt.innerHTML=null;
+           let chechpin=document.createElement("p");
+           if(pincodeimput.value>=100000 && pincodeimput.value<=999999)
+           {
+               checkoutput.innerText="Delivery available at this pincode";
+               checkoutput.style.color="green";
+               checkoutpudivt.append(checkoutput)
+               console.log("done");
+           }
+           else{
+            checkoutput.innerText="Pincode not serviceable";
+            checkoutput.style.color="red";
+            checkoutpudivt.append(checkoutput)
+               console.log("No")
+           }
+       })
 
-       pincodediv.append(pincodep1,pincodeimput,pincodebtn)
+       pincodediv.append(pincodep1,pincodeimput,pincodebtn, checkoutpudivt)
 
 
 

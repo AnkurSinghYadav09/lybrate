@@ -13,7 +13,7 @@ body{
 #leftSideDiv{
     height: 550px;
     width: 170px;
-    border: 1px solid red;
+    
     overflow-x: hidden;
     overflow-y: scroll;
 }
@@ -29,7 +29,7 @@ body{
     
     height: 600px;
     width: 470px;
-    border: 1px solid red;
+    
 }
 .centrebutton{
     margin-top: 25px;
@@ -62,10 +62,10 @@ body{
     width: 100%;
 }
 #rightSideDiv{
-    height: 800px;
+    /* height: 800px; */
     width: 520px;
     margin-left: 20px;
-    border: 1px solid red;
+    
 }
 .productName>h1{
    font-size:20px;
@@ -75,13 +75,13 @@ body{
     margin-top: 1px;
     font-size:14px;
     color:#259b24;
-    border: 1px solid red;
+    
 
  }
 .priceId{
     display: flex;
     gap:20px;
-    border: 1px solid red;
+    
     height: 40px;
     margin-top:-10px
     
@@ -115,7 +115,7 @@ body{
 .goldratingdiv{
    display: flex;
    margin-top: -8px;
-   border: 1px solid red;
+   
    height: 55px;
    
 
@@ -146,7 +146,7 @@ body{
    margin-top: 10px;
    height: 80px;
    width: 100%;
-   border: 1px solid red;
+   
    /* background-color:#dce0e0; */
    background-color:whitesmoke;
    border-radius: 7px;
@@ -175,20 +175,20 @@ body{
 
 }
 .prodDescription{
-    border: 1px solid red;
+    
   color:#6c6a6a;
   font-size: 16px;
   font-weight: 500;  
 }
 
 .logodiv1{
-    border: 1px solid red;
+    
     height: 40px;
     display: flex;
 }
 
 .logodiv2{
-    border: 1px solid red;
+    
     display: flex;
     height: 50px;  
 }
@@ -212,7 +212,15 @@ body{
 }
 .pincodediv{
     display: flex;
-    border-top: 1px solid red;
+    margin-bottom: 20px;
+    /* height: 100px; */
+}
+.checkoutpudiv
+{
+    position: absolute;
+    font-size: 13px;
+    left: 62%;
+    top:70%
 }
 .pincodep1{
     color:#6c6a6a;
@@ -253,12 +261,9 @@ body{
     justify-content:space-around;
 }
 
-.main_authantic_div>div{
-    border: 1px solid red;
-    
-}
+
 .authantic-logo>span{
-    /* border: 1px solid red; */
+    /*  */
     height: 30px;
     width: 25px;
     align-items: center;
@@ -272,7 +277,7 @@ body{
     background-color:#c82506
 }
 .authantic-logo1>span{
-    /* border: 1px solid red; */
+    /*  */
     height: 30px;
     width: 25px;
     align-items: center;
@@ -286,7 +291,7 @@ body{
     background-color:#259b24;
 }
 .authantic-logo2>span{
-    /* border: 1px solid red; */
+    /*  */
     height: 30px;
     width: 25px;
     align-items: center;
