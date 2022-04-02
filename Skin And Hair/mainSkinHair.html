@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skin & Hair Care</title>
+
+    <link rel="icon" type="image/x-icon" href="https://www.lybrate.com/img/push-crew/logo_192_by_192.png">
+
+     <link rel="stylesheet" href="../main css for all product/main css for all.css">
+
+</head>
+<body>
+
+    <!-- below given window siliding html -->
+
+    <div id = "slideshow">
+
+    </div>
+
+    <div id="filter-maincontainer">
+
+        <div id="left-filter">
+          <div id="left-filter-child">
+            <div id="filter-child2">
+                <h5>Filter By</h5>
+            </div>
+            <div id="clear-all">
+                <h5 id="clear">CLEAR ALL</h5>
+            </div>
+          </div>
+            <hr id="hr1"/>
+    
+        </div>
+
+        <div id="right-filter">
+            <div id="filterhome">
+                <a href=""> <p style="color:#c82506">Home</p></a>
+                <a href=""> <p>></p></a>
+                <a href=""><p id="goodkart"style="color:#c82506">Goodkart</p> </a>
+                <a href=""> <p>></p></a>
+                <a href=""><p>Skin & Hair Care</p></a>
+            </div>
+
+            <div id = "Sexual">
+                <p>Skin & Hair Care</p>
+
+            </div>
+
+            <div id = "Sort-By">
+              <div>
+                <ly-svg-icon p="sort-descending" class="ly-svg--md ng-isolate-scope"><svg xmlns="http://www.w3.org/2000/svg" height="25px" width="25px" fill="black"  preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path ng-attr-d="{{$root.icons[ctrl.p]}}" d="M10,13V11H18V13H10M10,19V17H14V19H10M10,7V5H22V7H10M6,17H8.5L5,20.5L1.5,17H4V4H6V17Z"></path></svg></ly-svg-icon>
+                   <h6> Sort By</h6>
+
+              </div>
+                 <p>Popularity</p>
+                 <p id="para1">Price Low to High</p>
+                 <p id="para2">Price High to Low</p>
+                     
+            </div>
+            
+        </div>
+
+
+    </div>
+
+
+    <!-- blew given product page html -->
+    <div id="maincontainer">
+
+        <div id="shortingContainer">
+
+            <div id="overlay"></div>
+
+            <div id="container">
+              
+                <div class="multipleSelection">
+                  <div class="selectBox" onclick="price()">
+                    <div id="price">
+                      <p>Price</p>
+                    </div>
+                  </div>
+                  <div id="pricelist">
+                    <label for="first">
+                      <input type="checkbox" id="search1"/>     
+                     Under ₹200
+                    </label>
+        
+                    <label for="second">
+                      <input type="checkbox" id="search2"  />
+                      ₹200 to ₹500
+                    </label>
+                    <label for="third">
+                      <input type="checkbox"  id="search3" />
+                      ₹500 to ₹1000
+                    </label>
+                    <label for="fourth">
+                        <input type="checkbox"  id="search4" />
+                        Above ₹1000
+                      </label>
+                    
+                  </div>
+                </div>
+                <hr />
+                <div class="multipleSelection">
+                  <div class="selectBox" onclick="price()">
+                    <div id="price">
+                      <p>Brand:</p>
+                    </div>
+                  </div>
+        
+                  <div id="brandlist">
+                    <label for="first">
+                      <input type="checkbox" onclick="myfunctionB1('Oshea')" id="search" />
+                      Oshea Herbals
+                    </label>
+        
+                    <label for="second">
+                      <input type="checkbox" onclick="myfunctionB2('Organically')" id="search" />
+                      Love Organically
+                    </label>
+        
+                    <label for="third">
+                      <input type="checkbox" onclick="myfunctionB3('Gangakshi')" id="search" />
+                      Gangakshi
+                    </label>
+        
+                    <label for="Natural">
+                      <input type="checkbox" onclick="myfunctionB4('Natural')" id="search" />
+                      Natural Vibes
+                    </label>
+        
+                    <label for="five">
+                      <input type="checkbox" onclick="myfunctionB5('Auggmin')" id="search" />
+                      Auggmin
+                    </label>
+        
+                    <label for="six">
+                      <input type="checkbox" onclick="myfunctionB6('Acne')"  id="search" />
+                      Acne
+                    </label>
+        
+                    <label for="seven">
+                      <input type="checkbox" onclick="myfunctionB7('Fungicid')" id="search" />
+                      Fungicid
+                    </label>
+        
+                    <!-- <label for="eigtht">
+                      <input type="checkbox" onclick="myfunction('Add')" id="search" />
+                      Add Veda
+                    </label>
+                      <label for="nine">
+                        <input type="checkbox" onclick="myfunction('Butterfly')" id="search" />
+                       Butterfly Ayurveda
+                      </label>
+                      <label for="ten">
+                        <input type="checkbox" onclick="myfunction('Carmine')" id="search" />
+                        Carmine Country
+                      </label>
+                      <label for="eleven">
+                        <input type="checkbox" onclick="myfunction('Maheshwari')" id="search" />
+                        Maheshwari Pharmaceuticals
+                      </label>
+                      <label for="twelve">
+                        <input type="checkbox" onclick="myfunction('Onelife')" id="search" />
+                        Onelife
+                      </label>
+                      <label for="thirteen">
+                        <input type="checkbox" onclick="myfunction('Healthcare')" id="search" />
+                        QAAF Healthcare international
+                      </label>
+                      <label for="fourteen">
+                        <input type="checkbox" onclick="myfunction(' Body ')" id="search" />
+                        Body and Herbs
+                      </label>
+                      <label for="fiveteen">
+                        <input type="checkbox" onclick="myfunction(' Daily')" id="search" />
+                        Daily Heatth Nutriton
+                      </label>
+                      <label for="sixteen">
+                        <input type="checkbox" onclick="myfunction('DNPL')" id="search" />
+                        DNPL
+                      </label>
+                      <label for="seventeen">
+                        <input type="checkbox" onclick="myfunction('Herbal')" id="search" />
+                        Herbal Vibe
+                      </label>
+                      <label for="eigthteen">
+                        <input type="checkbox" onclick="myfunction('Lupin')" id="search" />
+                        Lupin
+                      </label>
+                      <label for="nineteen">
+                        <input type="checkbox" onclick="myfunction('Millenium')" id="search" />
+                        Millenium Herbal Care 
+                      </label>
+                      <label for="eigth">
+                        <input type="checkbox" onclick="myfunction('Muscle')" id="search" />
+                        Muscle Monk
+                      </label><label for="eigth">
+                        <input type="checkbox" onclick="myfunction('Neuherbs')" id="search" />
+                        Neuherbs
+                      </label>
+                      <label for="eigth">
+                        <input type="checkbox" onclick="myfunction('Shree')" id="search" />
+                       Shree Dhootpapeshwar
+                      </label> -->
+
+                  </div>
+                </div>
+                <hr />
+        
+                <div class="multipleSelection">
+                  <div class="selectBox" onclick="discount()">
+                    <div id="price">
+                      <p>Discount</p>
+                    </div>
+                    <!-- <div class="overSelect"></div> -->
+                  </div>
+        
+                  <div id="discountlist">
+                    <label for="first">
+                      <input type="checkbox" id="searchD1" />
+                      10% or more
+                    </label>
+                    <label for="second">
+                      <input type="checkbox" id="searchD2" />
+                      20% or more
+                    </label>
+                    <label for="third">
+                      <input type="checkbox"  id="searchD3" />
+                      30% or more
+                    </label>
+                    <label for="third">
+                        <input type="checkbox"  id="searchD4" />
+                        40% or more
+                      </label>
+                      <label for="third">
+                        <input type="checkbox" id="searchD5" />
+                        50% or more
+                      </label>
+                      <label for="third">
+                        <input type="checkbox"  id="searchD6" />
+                        60% or more
+                      </label>
+                  </div>
+                </div>
+
+              
+        
+              <div id="productarray"></div>
+            </div>          
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+        
+
+        <div id="productcontainer">
+
+            <div id="main">
+          
+            </div>
+        </div>
+        
+    </div>
+
+
+
+    <div  id="main-dowm-paragraph">
+        <div id="dowm-paragraph">
+            <p>
+               <b> Disclaimer :</b>  While we ensure that all product information on the platform is complete and accurate,
+                however, we advise you not to solely rely on this information. It is recommended to refer to the product 
+                manual and/or specifications provided by the manufacturer either on their website or along with the product. 
+                This is applicable for all warnings, labels, ingredients and usage directions as well. The use of any i
+                nformation provided on this platform is solely at the user's risk. Nothing contained on this platform shall
+                 be considered as medical advice. Consumers are advised to contact the manufacturer for any further
+                  information and assistance. The results from the 
+               products will vary from person to person, No individual result should be seen as typical.
+            </p>
+        </div>
+
+    </div>
+    <div id ="dowm-paragraph2" >
+        <div id="dowm-paragraph2-child" >
+             <h4>Shop Natural and Organic Items at GoodKart</h4>
+
+             <p>
+              Youthful skin is a secret desire of many. We spend a lot of time taking care of our face and
+               often forget that our bodies also need special attention. This habit needs to be altered and
+                one should make a routine of using hand and body items regularly which not only have natural benefits
+               but additionally may have a refreshing scent for creating a relaxing environment.
+             </p>
+
+             <p>
+              GoodKart has an assortment of items to evade the dryness and keep the hands & body skin hydrated.
+               Serve a variety of purposes that benefit consumers in everyday life. Men and women from 
+              all walks of life, regions & climate can use these items to pamper themselves.
+             </p>
+
+               <p>
+                When it comes to wellness, it should be taken seriously. With all of the pressures & tensions
+                 of everyday life, it’s vital that we take some time to just relax. It is not possible to afford 
+                 the leisure of the spa every time. However, a warm bath after a busy day, especially on a cold 
+                 winter night is equally soothing.Bathing aids in detoxification of the body relaxes our muscles 
+                 & joints and help us sleep better. Just add some amazing bath-essentials to your routine and you 
+                 will be instantly relaxed. The key to maximizing this relaxation time in the tub is using the right 
+                 ingredients. GoodKart has a 
+                compilation of luxurious bath essentials composed of rejuvenating and healing ingredients
+               </p>
+
+           
+            
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="./mainSkinHair.js" >
+
+</script>

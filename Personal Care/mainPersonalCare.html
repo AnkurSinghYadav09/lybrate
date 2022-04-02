@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Care</title>
+
+    <link rel="icon" type="image/x-icon" href="https://www.lybrate.com/img/push-crew/logo_192_by_192.png">
+
+     <link rel="stylesheet" href="../main css for all product/main css for all.css">
+
+</head>
+<body>
+
+    <!-- below given window siliding html -->
+
+    <div id = "slideshow">
+
+    </div>
+
+    <div id="filter-maincontainer">
+
+        <div id="left-filter">
+          <div id="left-filter-child">
+            <div id="filter-child2">
+                <h5>Filter By</h5>
+            </div>
+            <div id="clear-all">
+                <h5 id="clear">CLEAR ALL</h5>
+            </div>
+          </div>
+            <hr id="hr1"/>
+    
+        </div>
+
+        <div id="right-filter">
+            <div id="filterhome">
+                <a href=""> <p style="color:#c82506">Home</p></a>
+                <a href=""> <p>></p></a>
+                <a href=""><p id="goodkart"style="color:#c82506">Goodkart</p> </a>
+                <a href=""> <p>></p></a>
+                <a href=""><p>Child Care</p></a>
+            </div>
+
+            <div id = "Sexual">
+                <p>Personal Care</p>
+
+            </div>
+
+            <div id = "Sort-By">
+              <div>
+                <ly-svg-icon p="sort-descending" class="ly-svg--md ng-isolate-scope"><svg xmlns="http://www.w3.org/2000/svg" height="25px" width="25px" fill="black"  preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path ng-attr-d="{{$root.icons[ctrl.p]}}" d="M10,13V11H18V13H10M10,19V17H14V19H10M10,7V5H22V7H10M6,17H8.5L5,20.5L1.5,17H4V4H6V17Z"></path></svg></ly-svg-icon>
+                   <h6> Sort By</h6>
+
+              </div>
+                 <p>Popularity</p>
+                 <p id="para1">Price Low to High</p>
+                 <p id="para2">Price High to Low</p>
+                     
+            </div>
+            
+        </div>
+
+
+    </div>
+
+
+    <!-- blew given product page html -->
+    <div id="maincontainer">
+
+        <div id="shortingContainer">
+
+            <div id="overlay"></div>
+
+            <div id="container">
+              
+                <div class="multipleSelection">
+                  <div class="selectBox" onclick="price()">
+                    <div id="price">
+                      <p>Price</p>
+                    </div>
+                  </div>
+                  <div id="pricelist">
+                    <label for="first">
+                      <input type="checkbox" id="search1"/>     
+                     Under ₹200
+                    </label>
+        
+                    <label for="second">
+                      <input type="checkbox" id="search2"  />
+                      ₹200 to ₹500
+                    </label>
+                    <label for="third">
+                      <input type="checkbox"  id="search3" />
+                      ₹500 to ₹1000
+                    </label>
+                    <label for="fourth">
+                        <input type="checkbox"  id="search4" />
+                        Above ₹1000
+                      </label>
+                    
+                  </div>
+                </div>
+                <hr />
+                <div class="multipleSelection">
+                  <div class="selectBox" onclick="price()">
+                    <div id="price">
+                      <p>Brand:</p>
+                    </div>
+                  </div>
+        
+                  <div id="brandlist">
+                    <label for="first">
+                      <input type="checkbox" onclick="myfunctionB1('Butterfly')" id="search" />
+                      Butterfly
+                    </label>
+        
+                    <label for="second">
+                      <input type="checkbox" onclick="myfunctionB2('Greencure')" id="search" />
+                      Greencure
+                    </label>
+        
+                    <label for="third">
+                      <input type="checkbox" onclick="myfunctionB3('Gangakshi')" id="search" />
+                      Gangakshi
+                    </label>
+        
+                    <label for="fourth">
+                      <input type="checkbox" onclick="myfunctionB4('Herbal')" id="search" />
+                      Herbal
+                    </label>
+        
+                    <label for="five">
+                      <input type="checkbox" onclick="myfunctionB5('Syounaa')" id="search" />
+                      Syounaa
+                    </label>
+        
+                    <label for="six">
+                      <input type="checkbox" onclick="myfunctionB6('Keeo')"  id="search" />
+                      Keeo
+                    </label>
+        
+                    <label for="seven">
+                      <input type="checkbox" onclick="myfunctionB7('DNPL')" id="search" />
+                      DNPL
+                    </label>
+        
+                    <!-- <label for="eigtht">
+                      <input type="checkbox" onclick="myfunction('Add')" id="search" />
+                      Add Veda
+                    </label>
+                      <label for="nine">
+                        <input type="checkbox" onclick="myfunction('Butterfly')" id="search" />
+                       Butterfly Ayurveda
+                      </label>
+                      <label for="ten">
+                        <input type="checkbox" onclick="myfunction('Carmine')" id="search" />
+                        Carmine Country
+                      </label>
+                      <label for="eleven">
+                        <input type="checkbox" onclick="myfunction('Maheshwari')" id="search" />
+                        Maheshwari Pharmaceuticals
+                      </label>
+                      <label for="twelve">
+                        <input type="checkbox" onclick="myfunction('Onelife')" id="search" />
+                        Onelife
+                      </label>
+                      <label for="thirteen">
+                        <input type="checkbox" onclick="myfunction('Healthcare')" id="search" />
+                        QAAF Healthcare international
+                      </label>
+                      <label for="fourteen">
+                        <input type="checkbox" onclick="myfunction(' Body ')" id="search" />
+                        Body and Herbs
+                      </label>
+                      <label for="fiveteen">
+                        <input type="checkbox" onclick="myfunction(' Daily')" id="search" />
+                        Daily Heatth Nutriton
+                      </label>
+                      <label for="sixteen">
+                        <input type="checkbox" onclick="myfunction('DNPL')" id="search" />
+                        DNPL
+                      </label>
+                      <label for="seventeen">
+                        <input type="checkbox" onclick="myfunction('Herbal')" id="search" />
+                        Herbal Vibe
+                      </label>
+                      <label for="eigthteen">
+                        <input type="checkbox" onclick="myfunction('Lupin')" id="search" />
+                        Lupin
+                      </label>
+                      <label for="nineteen">
+                        <input type="checkbox" onclick="myfunction('Millenium')" id="search" />
+                        Millenium Herbal Care 
+                      </label>
+                      <label for="eigth">
+                        <input type="checkbox" onclick="myfunction('Muscle')" id="search" />
+                        Muscle Monk
+                      </label><label for="eigth">
+                        <input type="checkbox" onclick="myfunction('Neuherbs')" id="search" />
+                        Neuherbs
+                      </label>
+                      <label for="eigth">
+                        <input type="checkbox" onclick="myfunction('Shree')" id="search" />
+                       Shree Dhootpapeshwar
+                      </label> -->
+
+                  </div>
+                </div>
+                <hr />
+        
+                <div class="multipleSelection">
+                  <div class="selectBox" onclick="discount()">
+                    <div id="price">
+                      <p>Discount</p>
+                    </div>
+                    <!-- <div class="overSelect"></div> -->
+                  </div>
+        
+                  <div id="discountlist">
+                    <label for="first">
+                      <input type="checkbox" id="searchD1" />
+                      10% or more
+                    </label>
+                    <label for="second">
+                      <input type="checkbox" id="searchD2" />
+                      20% or more
+                    </label>
+                    <label for="third">
+                      <input type="checkbox"  id="searchD3" />
+                      30% or more
+                    </label>
+                    <label for="third">
+                        <input type="checkbox"  id="searchD4" />
+                        40% or more
+                      </label>
+                      <label for="third">
+                        <input type="checkbox" id="searchD5" />
+                        50% or more
+                      </label>
+                      <label for="third">
+                        <input type="checkbox"  id="searchD6" />
+                        60% or more
+                      </label>
+                  </div>
+                </div>
+
+              
+        
+              <div id="productarray"></div>
+            </div>          
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+        
+
+        <div id="productcontainer">
+
+            <div id="main">
+          
+            </div>
+        </div>
+        
+    </div>
+
+
+
+    <div  id="main-dowm-paragraph">
+        <div id="dowm-paragraph">
+            <p>
+               <b> Disclaimer :</b>  While we ensure that all product information on the platform
+                is complete and accurate, however, we advise you not to solely rely on this information.
+                 It is recommended to refer to the product manual and/or specifications provided by the 
+                 manufacturer either on their website or along with the product. This is applicable for all
+                  warnings, labels, ingredients and usage directions as well. The use of any information 
+                  provided on this platform is solely at the user's risk. Nothing contained on this platform 
+                  shall be considered as medical advice. Consumers are advised to contact the manufacturer for
+                   any further information and assistance. The results from the products 
+               will vary from person to person, No individual result should be seen as typical.
+            </p>
+        </div>
+
+    </div>
+    <div id ="dowm-paragraph2" >
+        <div id="dowm-paragraph2-child" >
+            <h4>Buy Personal Care Products Online in India on Lybrate</h4>
+
+            <p>
+               While personal care might seem like a millennial word, it is actually an art of taking 
+               time for yourself and prioritizing your own well-being & happiness above everything else. 
+               In today’s bustling lifestyle, it’s vital to look after our basic needs as humans. It’s 
+               very easy to lose sight of our base requirements when we’re surrounded by too much technology
+                and leading hectic lives.The term personal care products usually attributes a variety of items 
+                commonly found in the health and wellness sections of stores. 
+               These products meet the definitions of both drugs and cosmetics and serve a dual function.
+            </p>
+
+            <p>
+               In Goodkart you can buy personal care products online in India with great deals 
+               and offers on men, women and senior citizens. Check out the best products for
+                complete grooming and beauty with other foot care, oral care, personal hygiene 
+                accessories on Goodkart. Now explore the complete range of best personal care products
+                 for cleansing, moisturising, grooming kits, cosmetics, washes and sanitary products 
+                 within affordable prices under one roof.
+            </p>
+
+              
+
+              <h1>
+               PERSONAL CARE PRODUCTS ON LYBRATE : FOR COMPLETE HEALTHY HYGIENIC LIFE
+              </h1>
+
+            
+
+            <ul>
+
+                <li>
+                    <b>Women's Personal Care Products:</b> Women’s sanitation and hygiene are a much more serious issue 
+                    than we think they are! Despite the UN making water & sanitation facilities a basic human right,
+                     only about 1/4 of women are equipped with proper sanitation and hygienic environment in India.
+                      Personal hygiene is one of the most underrated yet very important aspects of our health. Women
+                       should give proper attention to their sanitation & hygiene since it’s closely related to overall 
+                       well-being. Ladies, it is time to take things in your own hands! If you are inquisitive about trying
+                        different products to care for your V-Zone,
+                     browse through an affordable assemblage of <b id="para-red">Women's personal care products</b> available on GoodKart.
+                </li>
+
+                <li>
+                    <b>Oral Care Products:</b> You are never too old for those pearly white teeth!
+                    A good dental regime is a key to graceful aging. A healthy grin can be a big
+                     asset and since this is so worthy, it makes sense to give your teeth the best
+                      of the best care possible. The perfect smile requires more than the conventional
+                       two minutes of brushing. People are so desirous to achieve that gleaming smile that they’
+                       ll go to any extent in the quest of achieving one. Why not simply step up your dental 
+                       game? For those who
+                    were failing on this front, we have a multitude of <b id="para-red">Oral care products</b> at GoodKart.
+                </li>
+                <li>
+                    <b>Eye Care Products:</b> It’s a disturbing fact that our eyes today are dull & lifeless and more like 
+                    black holes than stars, due to modern climate-controlled and screen-filled urban lifestyles. 
+                    But you’d be wrong to think that these are the sole factors. Our eyes do suffer due to our lifestyles
+                     & environment, they mostly suffer due to our negligence.Here at Goodkart,
+                     we have various <b id="para-red">eye care products</b> which can be used for keeping our eyes beautiful and healthy.
+                </li>
+              
+               
+              
+               <li>
+                   <b>Foot Care Products:</b> We all are on our feet most of the day, and our poor toes, 
+                   soles & heels need some care and consideration. Your feet should not be overlooked as 
+                   they help you stand up to your day, move you through the world and ground you. We have compiled
+                    innovative <b id="para-red">foot care products</b> at GoodKart to keep your feet in tip-top condition
+               </li>
+               <li>
+                   <b>Personal Care Products for Senior Citizen:</b> No one stays long at the peak of youthfulness. 
+                   Aging is a part & parcel of life and affects all. Companies around the globe are awakening up 
+                   to the emerging popularity of products intended to improve & enhance the lives of senior citizens.
+                    <b id="para-red">Senior care products</b> available at GoodKart are designed particularly to aid in healthy aging. 
+                    These easy-to-use 
+                   personal care products combat aging challenges and keep up with the lifestyle of seniors.
+               </li>
+               <li>
+                  <b>Health Wellness Products: </b> Health Wellness Products: Every person wants to live their 
+                   life in a healthy way without spending as much time on any method for getting it.
+                    Wellness is now a concern in the environment where we just don't have clean air to breathe 
+                    or water to drink even.
+                    Thus, it's an important concern and aspect of our health.
+               </li>
+               <li>
+                  <b>Skin and Hair Care Products:</b> We believe that beauty is skin deep. Managing skin 
+                   and hair involves a serious effort. Healthy skin makes you look radiant throughout the 
+                   day without any makeup. However, we also understand that it isn’t easy to identify a
+                    product great for your specific skin type since the market is flooded with skin and 
+                    fairness cream companies claiming results that can only be deemed as magical.At GoodKart,
+                     we have rounded up the best skin and <b id="para-red">hair care products</b> for our consumers that have caught
+                      the attention of the beauty industry. You can bid goodbye to 
+                   your dry, dull skin and hair woes easily with these top of the shelf products.
+               </li>
+                  
+            </ul>
+
+             <h1>HOW TO MAINTAIN FEMININE HYGIENE?</h1>
+              
+           <p>
+               Female hygiene is really important from puberty onwards, and not only because of menstruation!
+                Whatever the time of the month, being clean & hygienic is fundamental for overall well being.
+                 Women should ascertain a hygiene routine that’s fit for them. Intimate washes can be a good
+                  product, to begin with,
+                mainly if your usual soaps or shower gels have left your skin irritated or dry
+           </p>
+           <p>
+               Cotton underwear should be preferred for their breathability, furthermore,
+                they help to keep vexatious vaginal problems at bay. Whether you use sanitary napkins
+                 or tampons, it is a good idea to change them more frequently. Lastly, visit a medical
+                  expert if you have an infection that needs attention.
+                It’s nothing to feel abashed or uncomfortable about!
+           </p>
+           <h1>
+               HOW TO SELECT BEST PERSONAL CARE PRODUCTS ONLINE?
+           </h1>
+           <p>
+               While buying personal care products customers should keep some tips in their mind.
+                They should know their skin type,sensitivity issues and allergies from specific items.
+                 You should always check the ingredients, pH level and chemical content of the product and try
+                 to buy natural personal care products only. Personal care is important therefore the products 
+                 you use should be skin-friendly and there should not be any side effects. If you are buying any
+                  product for your sensitivity, then you must be careful as applying any harsh can be dangerous.
+                   Here at GoodKart, we have a wide range of products from where you can choose from. 
+               All the products here are natural and they do not have any side effects.
+           </p>
+           
+           <h1>
+               BEST PERSONAL CARE PRODUCTS ONLINE AT LOW PRICES IN INDIA ON LYBRATE GOODKART
+           </h1>
+           <p>
+               We all dream of looking ageless and beautiful throughout our lives. For that, it is mandatory
+                to ensure our care-cup is topped up! Healthy bodies and holistic wellness prerequisite a 360-
+                degree approach to our personal care - that makes you feel awesome inside - out.What a person 
+                describes as their version of personal care differs from person to person. For some, it’s a
+                 bubble bath, for others it’s healthy food & drinks. However you choose to do it, personal care 
+               is all about listening to what your body & mind needs and proffering it guilt-free.
+
+           </p>
+           <p>
+               At GoodKart, our professional team has assorted alluring personal care products to take
+                care of the needs & preferences of every individual. We have mused over the current market
+                 trends, including simplification and the need for multiple benefits in a single product while
+                  compiling personal care products at GoodKart. Get Discounts, great deals, combo offers
+               , and cashback while buying personal care products online from Goodkart platforms.
+           </p>
+           <p>
+               In the Goodkart platform, buy the best personal care products and grooming accessories under one 
+               roof for men and women's. Check out Oral Care products from try Butterfly Ayurveda. Rohto Pharma 
+               and Setu brands offer different eye care for redness, swelling, draining, irritation and improve 
+               vision. Whereas Syounaa, Green Cure, Pure Nutrition offers products for diabetic patients to care 
+               of the foot from dry, scaly cracked heels and joint pain problems. To boost your immunity and complete
+                body health using Maheshwari Pharmaceuticals, Aadar, and Healthvit Brand products. To maintain Beauty
+                 and hygiene, 
+               you can buy online various products of Keeo, Auggmin, Advind Healthcare, Iremia, and Auric brands.
+           </p>
+            
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="./mainPersonalCare.js" >
+
+</script>

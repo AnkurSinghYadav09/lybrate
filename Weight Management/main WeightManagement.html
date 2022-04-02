@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight Management</title>
+
+    <link rel="icon" type="image/x-icon" href="https://www.lybrate.com/img/push-crew/logo_192_by_192.png">
+
+     <link rel="stylesheet" href="../main css for all product/main css for all.css">
+
+</head>
+<body>
+
+    <!-- below given window siliding html -->
+
+    <div id = "slideshow">
+
+    </div>
+
+    <div id="filter-maincontainer">
+
+        <div id="left-filter">
+          <div id="left-filter-child">
+            <div id="filter-child2">
+                <h5>Filter By</h5>
+            </div>
+            <div id="clear-all">
+                <h5 id="clear">CLEAR ALL</h5>
+            </div>
+          </div>
+            <hr id="hr1"/>
+    
+        </div>
+
+        <div id="right-filter">
+            <div id="filterhome">
+                <a href=""> <p style="color:#c82506">Home</p></a>
+                <a href=""> <p>></p></a>
+                <a href=""><p id="goodkart"style="color:#c82506">Goodkart</p> </a>
+                <a href=""> <p>></p></a>
+                <a href=""><p>Child Care</p></a>
+            </div>
+
+            <div id = "Sexual">
+                <p>Weight Management</p>
+
+            </div>
+
+            <div id = "Sort-By">
+              <div>
+                <ly-svg-icon p="sort-descending" class="ly-svg--md ng-isolate-scope"><svg xmlns="http://www.w3.org/2000/svg" height="25px" width="25px" fill="black"  preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path ng-attr-d="{{$root.icons[ctrl.p]}}" d="M10,13V11H18V13H10M10,19V17H14V19H10M10,7V5H22V7H10M6,17H8.5L5,20.5L1.5,17H4V4H6V17Z"></path></svg></ly-svg-icon>
+                   <h6> Sort By</h6>
+
+              </div>
+                 <p>Popularity</p>
+                 <p id="para1">Price Low to High</p>
+                 <p id="para2">Price High to Low</p>
+                     
+            </div>
+            
+        </div>
+
+
+    </div>
+
+
+    <!-- blew given product page html -->
+    <div id="maincontainer">
+
+        <div id="shortingContainer">
+
+            <div id="overlay"></div>
+
+            <div id="container">
+              
+                <div class="multipleSelection">
+                  <div class="selectBox" onclick="price()">
+                    <div id="price">
+                      <p>Price</p>
+                    </div>
+                  </div>
+                  <div id="pricelist">
+                    <label for="first">
+                      <input type="checkbox" id="search1"/>     
+                     Under ₹200
+                    </label>
+        
+                    <label for="second">
+                      <input type="checkbox" id="search2"  />
+                      ₹200 to ₹500
+                    </label>
+                    <label for="third">
+                      <input type="checkbox"  id="search3" />
+                      ₹500 to ₹1000
+                    </label>
+                    <label for="fourth">
+                        <input type="checkbox"  id="search4" />
+                        Above ₹1000
+                      </label>
+                    
+                  </div>
+                </div>
+                <hr />
+                <div class="multipleSelection">
+                  <div class="selectBox" onclick="price()">
+                    <div id="price">
+                      <p>Brand:</p>
+                    </div>
+                  </div>
+        
+                  <div id="brandlist">
+                    <label for="first">
+                      <input type="checkbox" onclick="myfunctionB1('Lipolyzer')" id="search" />
+                      Lipolyzer
+                    </label>
+        
+                    <label for="second">
+                      <input type="checkbox" onclick="myfunctionB2('Neuherbs')" id="search" />
+                      Neuherbs
+                    </label>
+        
+                    <label for="third">
+                      <input type="checkbox" onclick="myfunctionB3('Ayusya')" id="search" />
+                      Ayusya
+                    </label>
+        
+                    <label for="fourth">
+                      <input type="checkbox" onclick="myfunctionB4('HealthVit')" id="search" />
+                      HealthVit
+                    </label>
+        
+                    <label for="five">
+                      <input type="checkbox" onclick="myfunctionB5('NutroActive')" id="search" />
+                      NutroActive
+                    </label>
+        
+                    <label for="six">
+                      <input type="checkbox" onclick="myfunctionB6('Sprig')"  id="search" />
+                      Sprig
+                    </label>
+        
+                    <label for="seven">
+                      <input type="checkbox" onclick="myfunctionB7('Herbal')" id="search" />
+                      Herbal
+                    </label>
+        
+                    <!-- <label for="eigtht">
+                      <input type="checkbox" onclick="myfunction('Add')" id="search" />
+                      Add Veda
+                    </label>
+                      <label for="nine">
+                        <input type="checkbox" onclick="myfunction('Butterfly')" id="search" />
+                       Butterfly Ayurveda
+                      </label>
+                      <label for="ten">
+                        <input type="checkbox" onclick="myfunction('Carmine')" id="search" />
+                        Carmine Country
+                      </label>
+                      <label for="eleven">
+                        <input type="checkbox" onclick="myfunction('Maheshwari')" id="search" />
+                        Maheshwari Pharmaceuticals
+                      </label>
+                      <label for="twelve">
+                        <input type="checkbox" onclick="myfunction('Onelife')" id="search" />
+                        Onelife
+                      </label>
+                      <label for="thirteen">
+                        <input type="checkbox" onclick="myfunction('Healthcare')" id="search" />
+                        QAAF Healthcare international
+                      </label>
+                      <label for="fourteen">
+                        <input type="checkbox" onclick="myfunction(' Body ')" id="search" />
+                        Body and Herbs
+                      </label>
+                      <label for="fiveteen">
+                        <input type="checkbox" onclick="myfunction(' Daily')" id="search" />
+                        Daily Heatth Nutriton
+                      </label>
+                      <label for="sixteen">
+                        <input type="checkbox" onclick="myfunction('DNPL')" id="search" />
+                        DNPL
+                      </label>
+                      <label for="seventeen">
+                        <input type="checkbox" onclick="myfunction('Herbal')" id="search" />
+                        Herbal Vibe
+                      </label>
+                      <label for="eigthteen">
+                        <input type="checkbox" onclick="myfunction('Lupin')" id="search" />
+                        Lupin
+                      </label>
+                      <label for="nineteen">
+                        <input type="checkbox" onclick="myfunction('Millenium')" id="search" />
+                        Millenium Herbal Care 
+                      </label>
+                      <label for="eigth">
+                        <input type="checkbox" onclick="myfunction('Muscle')" id="search" />
+                        Muscle Monk
+                      </label><label for="eigth">
+                        <input type="checkbox" onclick="myfunction('Neuherbs')" id="search" />
+                        Neuherbs
+                      </label>
+                      <label for="eigth">
+                        <input type="checkbox" onclick="myfunction('Shree')" id="search" />
+                       Shree Dhootpapeshwar
+                      </label> -->
+
+                  </div>
+                </div>
+                <hr />
+        
+                <div class="multipleSelection">
+                  <div class="selectBox" onclick="discount()">
+                    <div id="price">
+                      <p>Discount</p>
+                    </div>
+                    <!-- <div class="overSelect"></div> -->
+                  </div>
+        
+                  <div id="discountlist">
+                    <label for="first">
+                      <input type="checkbox" id="searchD1" />
+                      10% or more
+                    </label>
+                    <label for="second">
+                      <input type="checkbox" id="searchD2" />
+                      20% or more
+                    </label>
+                    <label for="third">
+                      <input type="checkbox"  id="searchD3" />
+                      30% or more
+                    </label>
+                    <label for="third">
+                        <input type="checkbox"  id="searchD4" />
+                        40% or more
+                      </label>
+                      <label for="third">
+                        <input type="checkbox" id="searchD5" />
+                        50% or more
+                      </label>
+                      <label for="third">
+                        <input type="checkbox"  id="searchD6" />
+                        60% or more
+                      </label>
+                  </div>
+                </div>
+
+              
+        
+              <div id="productarray"></div>
+            </div>          
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+        
+
+        <div id="productcontainer">
+
+            <div id="main">
+          
+            </div>
+        </div>
+        
+    </div>
+
+
+
+    <div  id="main-dowm-paragraph">
+        <div id="dowm-paragraph">
+            <p>
+                <b> Disclaimer :</b>  While we ensure that all product information on the platform is complete and accurate,
+                 however, we advise you not to solely rely on this information. It is recommended to refer to the product 
+                 manual and/or specifications provided by the manufacturer either on their website or along with the product. 
+                 This is applicable for all warnings, labels, ingredients and usage directions as well. The use of any i
+                 nformation provided on this platform is solely at the user's risk. Nothing contained on this platform shall
+                  be considered as medical advice. Consumers are advised to contact the manufacturer for any further
+                   information and assistance. The results from the 
+                products will vary from person to person, No individual result should be seen as typical.
+             </p>
+         </div>
+ 
+     </div>
+     <div id ="dowm-paragraph2" >
+         <div id="dowm-paragraph2-child" >
+              <h4>Buy Weight Management Products Online for Healthy Lifestyle</h4>
+ 
+              <p>
+                 In today’s time, the management of weight has become a problem for people. Either
+                  people are overweight or underweight. There can be many reasons be it age, hereditary,
+                   hormonal changes, disease, etc. Thus it becomes hard for people to manage their weight 
+                   and they have to adapt various weight management techniques to gain or to lose weight. 
+                   There are many weight
+                  management products present there for helping people to get into proper shape.
+              </p>
+ 
+              <p>
+                 You can choose products according to your requirement that is weight management
+                  supplements. These products help you and there are no side effects. Here at GoodKart,
+                   a wide variety of products available for every purpose that can help you in losing or
+                    gaining weight effectively. You can explore a wide range of different Weight 
+                    management capsules, Drinks, Tablets, 
+                 Shakes, Pills, Ayurvedic medicines and Juices from best brands online.
+              </p>
+             
+    
+ 
+              <h1>BALANCED DIET FOR HEALTHY WEIGHT MANAGEMENT?</h1>
+              <p>
+                 An indispensable way to manage the right weight is to follow a meal plan.
+                  Anyone aspiring to manage the right weight should prepare a meal plan to dive
+                   in and start hitting the weight goals. This might help to keep a check on what
+                    you eat. A person should try to include enough protein and fibe
+                  in the diet to make one feel full and satisfied while cutting calories.
+              </p>
+              <p>
+                 A conventional meal plan should focus on fresh, whole foods not to just encourage 
+                 weight management but to promote optimal health. It should be rich in veggies, fruits,
+                  protein and good fat which keep you content while reducing the possibilities of overeating. 
+                  If you want to mix it up, there are 
+                 lots more options for healthy snacks to replace high-calorie, sugary bites.
+ 
+              </p>
+              <p>
+                 Basically, a meal plan should be capable of reducing your appetite significantly, 
+                 make you lose weight gradually, and improve your metabolic health at the same time. 
+                 It can sometimes be complicated to put together a meal plan on your own since a diet plan
+                  is based on a certain scientific piece of evidence. 
+                 Taking help from an expert dietitian or nutritionist can be a smart choice.
+              </p>
+               <h1>
+ 
+                 DIFFERENT WEIGHT MANAGEMENT PRODUCTS AND BENEFITS?
+               </h1>
+           <p>
+             <b>Weight Gain Supplements:</b> These products become very popular lately to achieve 
+             strength and build muscles. Another positive aspect attached to weight gain products 
+             is that these can function either as meal 
+             replacements or as an addition to the meals to increase the calorie intake..
+           </p>
+    
+           <p>
+            <b> Meal Replacement Products:</b> If you are in a rush or looking for a healthy alternative 
+             for sudden cravings, try meal replacement products. These products resist the temptation 
+             to indulge in unhealthy processed foods and have an intent to provide the nutrition of a 
+             full meal. Meal replacement drinks are a portable & convenient way to get healthy and lose
+              weight. The desire for processed snacks and sweets will also be reduced.
+           </p>
+ 
+           <p>
+             <b>Weight Loss Supplements:</b> Weight loss products are known to function by reducing
+              appetite and boosting energy. There are numerous weight management products available
+               in the market that aid in removing excess fats and make one fitter. These claim to 
+             help you lose weight and burn calories quickly by improving metabolism rate.
+           </p>
+ 
+          <h1>
+             WHICH DIET IS BEST FOR WEIGHT MANAGEMENT?
+          </h1>
+          <p>
+             To get proper weight people should adopt proper eating habits. If someone wants
+              to shed weight then they should eat food according to it and weight gainers should 
+              eat according to it.To manage weight according 
+             to a specific diet plan and should be followed strictly to achieve the result.
+          </p>
+           <ul>
+               <li>
+                 <b>Weight loss diet:</b> If you want to lose weight then you should follow this diet plan which
+                  includes: whole eggs, green leafy vegetables, salmon, soups, Chicken breast, beans and
+                   legumes, boiled potato, tuna, apple cider vinegar, green tea, nuts. Apart from these
+                    people can also take <b id="para-red"> Weight loss supplements.</b>
+                  These supplements help in shedding extra kilos without any side effects.
+               </li>
+               <li>
+                 <b>Weight gain diet:</b> If you want to gain weight then you should follow this diet plan 
+                 which includes: Homemade protein shake, milk, soups, rice, nuts, dried fruits, red meat
+                 , potato, and starch, whole grain bread, etc. Apart from these, 
+                 you can also take <b id="para-red"> Weight gain supplements</b> which are helpful in gaining weight.
+               </li>
+               <p>
+                 Here at GoodKart, we have products that help inmanaging the right weight without any side effects.
+               </p>
+           </ul>
+ 
+           <h1>
+             DO WEIGHT MANAGEMENT PRODUCTS ACTUALLY WORK?
+           </h1>
+           <p>
+             Weight management products actually work but they take their own time and
+              cannot create miracles. These products have their potential benefits and if taken in 
+             the prescribed amount then they do not show any type of side effects.
+           </p>
+           <h1>
+             HOW TO SELECT SAFE NATURAL WEIGHT MANAGEMENT SUPPLEMENTS?
+           </h1>
+           <p>
+             You can select healthy and natural supplements for weight management online by
+              reading the ingredients properly and checking if you are not allergic to it.
+               You should take the supplements in the exact dosage as 
+             mentioned because more than that can cause side effects.
+           </p>
+           <h1>
+             BUY BEST WEIGHT MANAGEMENT PRODUCTS ONLINE AT LYBRATE GOODKART
+           </h1>
+           <p>
+             Have you set some new health and fitness goals for the right weight? 
+             That’s awesome! It is possible to get thrust on the weight manage journey smartly
+              and healthily way. Weight management products available on <b id="para-red">GoodKart</b> can provide you
+               with an awesome way
+              to kick start your weight management program and help you maintain the momentum.
+ 
+           </p>
+           <p>
+             Managing right weight is not an effortless ride. It requires a lot of dedication 
+             and mental toughness. If you want to lose weight without compromising your health. 
+             Our full range of weight management products will not only help you lose 
+             those extra kilos but also assist in boosting metabolism and improving digestion.
+           </p>
+           <p>
+             At GoodKart, we are offering different weight management pillsPowder,
+              Juices, Meal Shakes, Tea and even food products from top brands. Depending on
+               your physical requirement and your specific objective, you can cherry-pick the
+                product you desire at best prices and get assured
+              Lybrate cashback on best weight management products online with fast shipping options.
+           </p>
+            
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="./main WeightManagement.js" >
+
+</script>

@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitamin & Supplement</title>
+
+    <link rel="icon" type="image/x-icon" href="https://www.lybrate.com/img/push-crew/logo_192_by_192.png">
+
+     <link rel="stylesheet" href="../main css for all product/main css for all.css">
+
+</head>
+<body>
+
+    <!-- below given window siliding html -->
+
+    <div id = "slideshow">
+
+    </div>
+
+    <div id="filter-maincontainer">
+
+        <div id="left-filter">
+          <div id="left-filter-child">
+            <div id="filter-child2">
+                <h5>Filter By</h5>
+            </div>
+            <div id="clear-all">
+                <h5 id="clear">CLEAR ALL</h5>
+            </div>
+          </div>
+            <hr id="hr1"/>
+    
+        </div>
+
+        <div id="right-filter">
+            <div id="filterhome">
+                <a href=""> <p style="color:#c82506">Home</p></a>
+                <a href=""> <p>></p></a>
+                <a href=""><p id="goodkart"style="color:#c82506">Goodkart</p> </a>
+                <a href=""> <p>></p></a>
+                <a href=""><p>Child Care</p></a>
+            </div>
+
+            <div id = "Sexual">
+                <p>Vitamin & Supplement</p>
+
+            </div>
+
+            <div id = "Sort-By">
+              <div>
+                <ly-svg-icon p="sort-descending" class="ly-svg--md ng-isolate-scope"><svg xmlns="http://www.w3.org/2000/svg" height="25px" width="25px" fill="black"  preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path ng-attr-d="{{$root.icons[ctrl.p]}}" d="M10,13V11H18V13H10M10,19V17H14V19H10M10,7V5H22V7H10M6,17H8.5L5,20.5L1.5,17H4V4H6V17Z"></path></svg></ly-svg-icon>
+                   <h6> Sort By</h6>
+
+              </div>
+                 <p>Popularity</p>
+                 <p id="para1">Price Low to High</p>
+                 <p id="para2">Price High to Low</p>
+                     
+            </div>
+            
+        </div>
+
+
+    </div>
+
+
+    <!-- blew given product page html -->
+    <div id="maincontainer">
+
+        <div id="shortingContainer">
+
+            <div id="overlay"></div>
+
+            <div id="container">
+              
+                <div class="multipleSelection">
+                  <div class="selectBox" onclick="price()">
+                    <div id="price">
+                      <p>Price</p>
+                    </div>
+                  </div>
+                  <div id="pricelist">
+                    <label for="first">
+                      <input type="checkbox" id="search1"/>     
+                     Under ₹200
+                    </label>
+        
+                    <label for="second">
+                      <input type="checkbox" id="search2"  />
+                      ₹200 to ₹500
+                    </label>
+                    <label for="third">
+                      <input type="checkbox"  id="search3" />
+                      ₹500 to ₹1000
+                    </label>
+                    <label for="fourth">
+                        <input type="checkbox"  id="search4" />
+                        Above ₹1000
+                      </label>
+                    
+                  </div>
+                </div>
+                <hr />
+                <div class="multipleSelection">
+                  <div class="selectBox" onclick="price()">
+                    <div id="price">
+                      <p>Brand:</p>
+                    </div>
+                  </div>
+        
+                  <div id="brandlist">
+                    <label for="first">
+                      <input type="checkbox" onclick="myfunctionB1('Butterfly')" id="search" />
+                      Butterfly
+                    </label>
+        
+                    <label for="second">
+                      <input type="checkbox" onclick="myfunctionB2('Nourish')" id="search" />
+                      Nourish
+                    </label>
+        
+                    <label for="third">
+                      <input type="checkbox" onclick="myfunctionB3('Farm')" id="search" />
+                      Farm
+                    </label>
+        
+                    <label for="fourth">
+                      <input type="checkbox" onclick="myfunctionB4('Saffola')" id="search" />
+                      Saffola
+                    </label>
+        
+                    <label for="five">
+                      <input type="checkbox" onclick="myfunctionB5('DNPL')" id="search" />
+                      DNPL
+                    </label>
+        
+                    <label for="six">
+                      <input type="checkbox" onclick="myfunctionB6('SleepRite')"  id="search" />
+                      SleepRite
+                    </label>
+        
+                    <label for="seven">
+                      <input type="checkbox" onclick="myfunctionB7('Onelife')" id="search" />
+                      Onelife
+                    </label>
+        
+                    <!-- <label for="eigtht">
+                      <input type="checkbox" onclick="myfunction('Add')" id="search" />
+                      Add Veda
+                    </label>
+                      <label for="nine">
+                        <input type="checkbox" onclick="myfunction('Butterfly')" id="search" />
+                       Butterfly Ayurveda
+                      </label>
+                      <label for="ten">
+                        <input type="checkbox" onclick="myfunction('Carmine')" id="search" />
+                        Carmine Country
+                      </label>
+                      <label for="eleven">
+                        <input type="checkbox" onclick="myfunction('Maheshwari')" id="search" />
+                        Maheshwari Pharmaceuticals
+                      </label>
+                      <label for="twelve">
+                        <input type="checkbox" onclick="myfunction('Onelife')" id="search" />
+                        Onelife
+                      </label>
+                      <label for="thirteen">
+                        <input type="checkbox" onclick="myfunction('Healthcare')" id="search" />
+                        QAAF Healthcare international
+                      </label>
+                      <label for="fourteen">
+                        <input type="checkbox" onclick="myfunction(' Body ')" id="search" />
+                        Body and Herbs
+                      </label>
+                      <label for="fiveteen">
+                        <input type="checkbox" onclick="myfunction(' Daily')" id="search" />
+                        Daily Heatth Nutriton
+                      </label>
+                      <label for="sixteen">
+                        <input type="checkbox" onclick="myfunction('DNPL')" id="search" />
+                        DNPL
+                      </label>
+                      <label for="seventeen">
+                        <input type="checkbox" onclick="myfunction('Herbal')" id="search" />
+                        Herbal Vibe
+                      </label>
+                      <label for="eigthteen">
+                        <input type="checkbox" onclick="myfunction('Lupin')" id="search" />
+                        Lupin
+                      </label>
+                      <label for="nineteen">
+                        <input type="checkbox" onclick="myfunction('Millenium')" id="search" />
+                        Millenium Herbal Care 
+                      </label>
+                      <label for="eigth">
+                        <input type="checkbox" onclick="myfunction('Muscle')" id="search" />
+                        Muscle Monk
+                      </label><label for="eigth">
+                        <input type="checkbox" onclick="myfunction('Neuherbs')" id="search" />
+                        Neuherbs
+                      </label>
+                      <label for="eigth">
+                        <input type="checkbox" onclick="myfunction('Shree')" id="search" />
+                       Shree Dhootpapeshwar
+                      </label> -->
+
+                  </div>
+                </div>
+                <hr />
+        
+                <div class="multipleSelection">
+                  <div class="selectBox" onclick="discount()">
+                    <div id="price">
+                      <p>Discount</p>
+                    </div>
+                    <!-- <div class="overSelect"></div> -->
+                  </div>
+        
+                  <div id="discountlist">
+                    <label for="first">
+                      <input type="checkbox" id="searchD1" />
+                      10% or more
+                    </label>
+                    <label for="second">
+                      <input type="checkbox" id="searchD2" />
+                      20% or more
+                    </label>
+                    <label for="third">
+                      <input type="checkbox"  id="searchD3" />
+                      30% or more
+                    </label>
+                    <label for="third">
+                        <input type="checkbox"  id="searchD4" />
+                        40% or more
+                      </label>
+                      <label for="third">
+                        <input type="checkbox" id="searchD5" />
+                        50% or more
+                      </label>
+                      <label for="third">
+                        <input type="checkbox"  id="searchD6" />
+                        60% or more
+                      </label>
+                  </div>
+                </div>
+
+              
+        
+              <div id="productarray"></div>
+            </div>          
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+        
+
+        <div id="productcontainer">
+
+            <div id="main">
+          
+            </div>
+        </div>
+        
+    </div>
+
+
+
+    <div  id="main-dowm-paragraph">
+        <div id="dowm-paragraph">
+            <p>
+               <b> Disclaimer :</b>  While we ensure that all product information on the platform is complete and accurate,
+                however, we advise you not to solely rely on this information. It is recommended to refer to the product 
+                manual and/or specifications provided by the manufacturer either on their website or along with the product. 
+                This is applicable for all warnings, labels, ingredients and usage directions as well. The use of any i
+                nformation provided on this platform is solely at the user's risk. Nothing contained on this platform shall
+                 be considered as medical advice. Consumers are advised to contact the manufacturer for any further
+                  information and assistance. The results from the 
+               products will vary from person to person, No individual result should be seen as typical.
+            </p>
+        </div>
+
+    </div>
+    <div id ="dowm-paragraph2" >
+        <div id="dowm-paragraph2-child" >
+             <h4>Buy Vitamins and Supplements Online For Good Health?</h4>
+
+             <p>
+                Vitamin supplements primarily comprise of minerals, herbs & botanicals, amino acids, 
+                fatty acids, and enzymes. These supplements aid in improving overall 
+                health by reducing the risk of chronic diseases and compensating for poor eating habits.
+             </p>
+
+             <p>
+                A lot of us require Vitamin supplements for various medical conditions, 
+                leading to nutritional deficiencies. Individuals who are on low-calorie diets, 
+                undergone weight loss surgery, have a low appetite, or don't get the necessary
+                 nutrients from diet alone may benefit from vitamin supplements. Vitamins and supplements
+                  come in a variety of forms other
+                 than conventional tablets & capsules such as powders, energy drinks, chewable gummies, and bars.
+             </p>
+             <p>
+                At Goodkart, you will find the best of the best Vitamins Supplements that are safe,
+                 effective, popular and easy to consume. They are budget-friendly and available at the
+                  most affordable prices. At Goodkart, we are offering a great deal on Health Supplements
+                   to our consumers and deliver our products all over India. Those who want to stay
+                 healthy for overall well being can include these supplements in their dietary regime.
+             </p>
+
+   
+
+             <h1>WHAT ARE THE USES OF VITAMIN AND SUPPLEMENTS PRODUCTS FOR HEALTHY LIFE?</h1>
+             <p>
+                To perform daily activities in our life, energy is needed and for that, a 
+                healthy diet with balanced vitamins and minerals is required. These essential vitamins help us to stay healthy. Vitamins offer various health benefits such as provides energy, helps in bone strength,
+                 supports immunity and vision, reduces pain, heal wounds and repair cellular damage.
+             </p>
+             <p>
+                Vitamins and other dietary supplements also help in pregnancy, birth defects,
+                 Weight management, liver and neurological problems. Use safe and best Vitamins 
+                 and Supplements if you are not getting sufficient 
+                amounts of essential nutrients from the diet to fulfill your daily needs.
+             </p>
+              <h1>
+                WHAT ARE THE DIFFERENT TYPES OF VITAMINS AND MINERALS SUPPLEMENTS?
+              </h1>
+              <p>
+                Vitamins and Supplements are used by our body for different metabolic activities.
+                 They are categorized into Water and Fat soluble vitamins. Minerals play an important
+                  role in the functioning of the body. It helps in transmitting nerve signals, healthy teeth,
+                   bones, controlling body fluids and maintaining acid-base balance. A list of essential
+                 Vitamins and Mineral list is given below to understand their benefits.
+              </p>
+             <ul>
+                <li>
+                    Vitamin A: This Vitamin helps in achieving healthy skin, improves vision and strengthens the
+                     immune system. Vitamin A also treats Night blindness, skin, hair regrowth and gum problems.
+                    </li>
+                <li>
+                    Vitamin B: There are different types of Vitamin B such as Vitamin B1 (Thiamine), 
+                    Vitamin B2 (Riboflavin), Vitamin B3 (Niacin), Vitamin B5 (Pantothenic Acid), Vitamin
+                     B6 (Pyridoxine), Vitamin B7 (Biotin), Vitamin B9 (Folic acid), and Vitamin B12 (Cobalamin).
+                      They are important for digestion, proper nerve functioning, normal vision, healthy skin,
+                       normal growth, good metabolism, balanced sugar levels, synthesizing acids, weight management, 
+                    and blood cell growth. Vitamin B also helps against hair loss and prevents blood disorders.
+                </li>
+                <li>
+                    Vitamin C: This Vitamin C supplement acts as ascorbic acid and supports immunity,
+                     growth, tissue repair, 
+                    and iron absorption. Vitamin C is also beneficial for skin, hair, and eyes
+                </li>
+                <li>
+                    Vitamin D: This Vitamin maintains bone, teeth muscle health and aids in skin protection and 
+                    diabetes management. 
+                    Vitamin D also helps in maintaining immunity, nervous system, and cardiovascular health
+                </li>
+                <li>
+                    Vitamin E: This Vitamin E contains Tocopherol & Tocotrienols and acts as antioxidants
+                     helps in soft and smooth skin. It helps in treating heart problems and promotes blood cell
+                      growth which helps in Anemia problem. Vitamin E reduce hair fall and improve Eye vision.
+                </li>
+                <li>
+                    Vitamin K: This vitamin helps in healing wounds and blood clotting processes. 
+                    This vitamin also maintains the calcium level in the body.
+                </li>
+                <li>
+                    Iron: This mineral is used to improve memory and also treats anemia. Iron in the
+                     body helps in the formation of hemoglobin for oxygen supply and aids in cell development.
+                </li>
+                <li>
+                    Calcium: This mineral is used to keep bones and teeth strong.
+                </li>
+                <li>
+                    Zinc: This mineral helps in infections, cell growth, ulcers, and skin problems. 
+                    Zinc also improves immunity to fight against toxic elements.
+                </li>
+                <li>
+                    Magnesium: This mineral helps in making protein in the body and also strengthens the immune system.
+                     Magnesium also helps in managing nerve function, blood sugar, and heartbeat level.
+                    </li>
+                <li>
+                    Iodine: Iodine helps in releasing enzymes for various body functions and transmits nerve signals.
+                     This mineral also assists in producing thyroid hormones to control metabolism, growth, and development.
+                </li>
+                <li>
+                    Selenium: Selenium acts as antioxidants which help in boosting immunity, 
+                    thyroid functioning and also maintain reproductive health. This mineral also helps the body to fight 
+                    against viral infections and prevents heart diseases.
+                </li>
+             </ul>
+
+              <h1>DIFFERENT TYPES OF VITAMINS AND SUPPLEMENTS PRODUCTS?</h1>
+             <p>
+                Today Top HealthCare brands are offering Vitamins & Supplements in the form of Capsule,
+                 Tablets, Syrup, Powder, Shakes, Seed Mix, Softgels and Strips for different age groups of
+                  Men, Women, and Children. These best multivitamin supplements are used to improve
+                   skin health, prevent hair loss, increase bone strength, 
+                resolve weight problems, boost the immune system and offer oral health care.
+             </p>
+             <p>
+                People are consuming different kinds of Vitamins supplements according to their
+                 health conditions and preference. Some use these products to fulfill the
+                  deficiency of vitamins in their body whereas others use it to improve
+                 their efficiency and performance in day to day activities.
+             </p>  
+
+             <h1>
+                WHAT ARE ANTIOXIDANTS?
+             </h1>
+             <p>
+                Antioxidants are molecules that protect healthy cells from damage caused by free
+                 radicals and toxic elements in the body. Free radicals are produced due to stress,
+                  infection, toxins, smoke, and the presence of an excess mineral in the body. 
+                  These micronutrients support the immune system for vital metabolic functions 
+                  and improve the circulation of blood. Vitamins such as C and E act as effective
+                   antioxidants. As an Antioxidant, Vitamins and Mineral supplements have a 
+                   persistent approach to prevent diseases and fight against infections. 
+                   You can buy healthy Antioxidants products available at GoodKart online
+                 in online which provide a multitude of health benefits to your body.
+             </p>
+             <h1>
+                WHAT ARE MULTIVITAMIN PRODUCTS?
+             </h1>
+             <p>
+                Multivitamins are a combination of different Vitamins, Minerals, and other dietary 
+                supplements products. Multivitamins ensure that the body gets the essential nutrients 
+                and bridge the nutritional gaps in the body. Multivitamins supplements offer unexpected
+                 bonus health benefits. They guard against diseases, 
+                improves energy & performance and treat nutritional deficiencies.
+             </p>
+             <p>
+                Taking a multivitamin is linked with a feeling of well-being, an increase in energy 
+                levels and a decrease in undue stress & worry. Hence, one should be dedicated to a 
+                multivitamin routine. A variety of best multivitamins are available at GoodKart 
+                in different forms of Powder, Mixture Tablets, Capsule,
+                 and Liquid form but keeping in mind the principle of individual differences.
+             </p>
+             <h1>
+                WHAT ARE HEALTH DIETARY SUPPLEMENTS?
+             </h1>
+             <p>
+                Dietary supplements include healthy foods and drinks that contain essential Vitamins
+                 ( A, B, B5, B12, C, D, D3, E, K, K2 ), Minerals ( Calcium, Magnesium, Iron, Chromium
+                 , Zinc, Selenium), fibers, enzymes, amino acids, and herbs. Health supplements
+                  help to maintain & restore essential nutrients level in the body and protect us
+                   from different toxic elements present in the body. Health Dietary supplements can
+                    be included in your
+                 daily dietary regime but they can't take the place of a healthy diet.
+             </p>
+             <p>
+                Dietary Supplements help in different health-related problems including boosting
+                 immunity & stamina, improving digestion & eye vision, increasing bone strength and 
+                 resolving hair & skin problems.
+                 Health supplements also prevent heart diseases and blood pressure problems.
+             </p>
+             <p>
+                Healthy Dietary supplements are now available at GoodKart for different age groups 
+                and offering nutritional value according to their health needs.
+             </p>
+              
+
+             <h1>
+                HOW TO SELECT HEALTHY SUPPLEMENTS AND VITAMINS ONLINE?
+             </h1>
+             <p>
+                 While buying Vitamins and Supplements Online for energy, fat-loss, and other
+                  immunity-boosting needs, you should be aware of the health benefits of taking
+                   these dietary supplements. Always read the ingredients & labels mentioned on the 
+                   food and beverage products. Check the quality of products before using them.
+                  Check if these supplements have any reported side effects or not.
+                </p>
+             <p>
+                Also, read instructions regarding the usage of these vitamins and mineral 
+                supplements to get the most out of these best supplements. Be aware of how long
+                 should you take the supplements and their interaction with other health products.
+                  You can consult a medical expert while taking Vitamin supplements 
+                if you are pregnant or breastfeeding and having any health problems.
+             </p>
+             <h1>
+                VITAMINS AND SUPPLEMENTS AT LYBRATE GOODKART PLATFORM
+             </h1>
+             <p>
+                For most of us, Good nutrition is undoubtedly the key to Good Health.
+                 The most troubling question still is, Are we taking enough essential Vitamins
+                  & Nutrients or not? Do we eat a balanced diet that includes a variety of fruits,
+                   vegetables, protein, and whole grains? Someone with an imbalanced diet will not be 
+                receiving the essential health supplements required to stay healthy.
+             </p>
+             <p>
+                The deficiency of Vitamins and Minerals can lead to a variety of health problems.
+                 While Healthy Diet is the best mode to get the Nutrients, Vitamins and Supplements
+                  can help. You can buy Various Vitamins and Supplements are available at <b id="para-red"> Goodkart </b>
+                  with an intent to increase the body’s wellness to deal with stress, lack of sleep, lack of energy,
+                 a dietary or nutrient deficiency that result due to a sedentary lifestyle.
+             </p>
+            
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="./mainVitaminSuppli.js" >
+
+</script>

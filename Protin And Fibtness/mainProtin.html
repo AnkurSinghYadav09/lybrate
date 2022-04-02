@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protein & Fitness</title>
+
+    <link rel="icon" type="image/x-icon" href="https://www.lybrate.com/img/push-crew/logo_192_by_192.png">
+
+     <link rel="stylesheet" href="../main css for all product/main css for all.css">
+
+</head>
+<body>
+
+    <!-- below given window siliding html -->
+
+    <div id = "slideshow">
+
+    </div>
+
+    <div id="filter-maincontainer">
+
+        <div id="left-filter">
+          <div id="left-filter-child">
+            <div id="filter-child2">
+                <h5>Filter By</h5>
+            </div>
+            <div id="clear-all">
+                <h5 id="clear">CLEAR ALL</h5>
+            </div>
+          </div>
+            <hr id="hr1"/>
+    
+        </div>
+
+        <div id="right-filter">
+            <div id="filterhome">
+                <a href=""> <p style="color:#c82506">Home</p></a>
+                <a href=""> <p>></p></a>
+                <a href=""><p id="goodkart"style="color:#c82506">Goodkart</p> </a>
+                <a href=""> <p>></p></a>
+                <a href=""><p>Child Care</p></a>
+            </div>
+
+            <div id = "Sexual">
+                <p>Protein & Fitness</p>
+
+            </div>
+
+            <div id = "Sort-By">
+              <div>
+                <ly-svg-icon p="sort-descending" class="ly-svg--md ng-isolate-scope"><svg xmlns="http://www.w3.org/2000/svg" height="25px" width="25px" fill="black"  preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path ng-attr-d="{{$root.icons[ctrl.p]}}" d="M10,13V11H18V13H10M10,19V17H14V19H10M10,7V5H22V7H10M6,17H8.5L5,20.5L1.5,17H4V4H6V17Z"></path></svg></ly-svg-icon>
+                   <h6> Sort By</h6>
+
+              </div>
+                 <p>Popularity</p>
+                 <p id="para1">Price Low to High</p>
+                 <p id="para2">Price High to Low</p>
+                     
+            </div>
+            
+        </div>
+
+
+    </div>
+
+
+    <!-- blew given product page html -->
+    <div id="maincontainer">
+
+        <div id="shortingContainer">
+
+            <div id="overlay"></div>
+
+            <div id="container">
+              
+                <div class="multipleSelection">
+                  <div class="selectBox" onclick="price()">
+                    <div id="price">
+                      <p>Price</p>
+                    </div>
+                  </div>
+                  <div id="pricelist">
+                    <label for="first">
+                      <input type="checkbox" id="search1"/>     
+                     Under ₹200
+                    </label>
+        
+                    <label for="second">
+                      <input type="checkbox" id="search2"  />
+                      ₹200 to ₹500
+                    </label>
+                    <label for="third">
+                      <input type="checkbox"  id="search3" />
+                      ₹500 to ₹1000
+                    </label>
+                    <label for="fourth">
+                        <input type="checkbox"  id="search4" />
+                        Above ₹1000
+                      </label>
+                    
+                  </div>
+                </div>
+                <hr />
+                <div class="multipleSelection">
+                  <div class="selectBox" onclick="price()">
+                    <div id="price">
+                      <p>Brand:</p>
+                    </div>
+                  </div>
+        
+                  <div id="brandlist">
+                    <label for="first">
+                      <input type="checkbox" onclick="myfunctionB1('Proburst')" id="search" />
+                      Proburst
+                    </label>
+        
+                    <label for="second">
+                      <input type="checkbox" onclick="myfunctionB2('RiteBite')" id="search" />
+                      RiteBite
+                    </label>
+        
+                    <label for="third">
+                      <input type="checkbox" onclick="myfunctionB3('Wel')" id="search" />
+                      Wel Ark
+                    </label>
+        
+                    <label for="fourth">
+                      <input type="checkbox" onclick="myfunctionB4('Onelife')" id="search" />
+                      Onelife
+                    </label>
+        
+                    <label for="five">
+                      <input type="checkbox" onclick="myfunctionB5('Navana')" id="search" />
+                      Navana's
+                    </label>
+        
+                    <label for="six">
+                      <input type="checkbox" onclick="myfunctionB6('Natural')"  id="search" />
+                      Natural
+                    </label>
+        
+                    <label for="seven">
+                      <input type="checkbox" onclick="myfunctionB7('Trekk')" id="search" />
+                      Trekk
+                    </label>
+        
+                    <!-- <label for="eigtht">
+                      <input type="checkbox" onclick="myfunction('Add')" id="search" />
+                      Add Veda
+                    </label>
+                      <label for="nine">
+                        <input type="checkbox" onclick="myfunction('Butterfly')" id="search" />
+                       Butterfly Ayurveda
+                      </label>
+                      <label for="ten">
+                        <input type="checkbox" onclick="myfunction('Carmine')" id="search" />
+                        Carmine Country
+                      </label>
+                      <label for="eleven">
+                        <input type="checkbox" onclick="myfunction('Maheshwari')" id="search" />
+                        Maheshwari Pharmaceuticals
+                      </label>
+                      <label for="twelve">
+                        <input type="checkbox" onclick="myfunction('Onelife')" id="search" />
+                        Onelife
+                      </label>
+                      <label for="thirteen">
+                        <input type="checkbox" onclick="myfunction('Healthcare')" id="search" />
+                        QAAF Healthcare international
+                      </label>
+                      <label for="fourteen">
+                        <input type="checkbox" onclick="myfunction(' Body ')" id="search" />
+                        Body and Herbs
+                      </label>
+                      <label for="fiveteen">
+                        <input type="checkbox" onclick="myfunction(' Daily')" id="search" />
+                        Daily Heatth Nutriton
+                      </label>
+                      <label for="sixteen">
+                        <input type="checkbox" onclick="myfunction('DNPL')" id="search" />
+                        DNPL
+                      </label>
+                      <label for="seventeen">
+                        <input type="checkbox" onclick="myfunction('Herbal')" id="search" />
+                        Herbal Vibe
+                      </label>
+                      <label for="eigthteen">
+                        <input type="checkbox" onclick="myfunction('Lupin')" id="search" />
+                        Lupin
+                      </label>
+                      <label for="nineteen">
+                        <input type="checkbox" onclick="myfunction('Millenium')" id="search" />
+                        Millenium Herbal Care 
+                      </label>
+                      <label for="eigth">
+                        <input type="checkbox" onclick="myfunction('Muscle')" id="search" />
+                        Muscle Monk
+                      </label><label for="eigth">
+                        <input type="checkbox" onclick="myfunction('Neuherbs')" id="search" />
+                        Neuherbs
+                      </label>
+                      <label for="eigth">
+                        <input type="checkbox" onclick="myfunction('Shree')" id="search" />
+                       Shree Dhootpapeshwar
+                      </label> -->
+
+                  </div>
+                </div>
+                <hr />
+        
+                <div class="multipleSelection">
+                  <div class="selectBox" onclick="discount()">
+                    <div id="price">
+                      <p>Discount</p>
+                    </div>
+                    <!-- <div class="overSelect"></div> -->
+                  </div>
+        
+                  <div id="discountlist">
+                    <label for="first">
+                      <input type="checkbox" id="searchD1" />
+                      10% or more
+                    </label>
+                    <label for="second">
+                      <input type="checkbox" id="searchD2" />
+                      20% or more
+                    </label>
+                    <label for="third">
+                      <input type="checkbox"  id="searchD3" />
+                      30% or more
+                    </label>
+                    <label for="third">
+                        <input type="checkbox"  id="searchD4" />
+                        40% or more
+                      </label>
+                      <label for="third">
+                        <input type="checkbox" id="searchD5" />
+                        50% or more
+                      </label>
+                      <label for="third">
+                        <input type="checkbox"  id="searchD6" />
+                        60% or more
+                      </label>
+                  </div>
+                </div>
+
+              
+        
+              <div id="productarray"></div>
+            </div>          
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+        
+
+        <div id="productcontainer">
+
+            <div id="main">
+          
+            </div>
+        </div>
+        
+    </div>
+
+
+
+    <div  id="main-dowm-paragraph">
+        <div id="dowm-paragraph">
+            <p>
+               <b> Disclaimer :</b>  While we ensure that all product information on the platform
+                is complete and accurate, however, we advise you not to solely rely on this information.
+                 It is recommended to refer to the product manual and/or specifications provided by the 
+                 manufacturer either on their website or along with the product. This is applicable for all
+                  warnings, labels, ingredients and usage directions as well. The use of any information 
+                  provided on this platform is solely at the user's risk. Nothing contained on this platform 
+                  shall be considered as medical advice. Consumers are advised to contact the manufacturer for
+                   any further information and assistance. The results from the products 
+               will vary from person to person, No individual result should be seen as typical.
+            </p>
+        </div>
+
+    </div>
+    <div id ="dowm-paragraph2" >
+        <div id="dowm-paragraph2-child" >
+            <h4>What are Protein and Fitness Products?</h4>
+
+            <p>
+                Race cars rely on the most exquisite material and premium quality of fuel to run faster.
+                 Our bodies are no different and require an adequate amount of carbohydrates, protein, 
+                 and fats to function efficiently. However, about 80% of the population struggle to eat a 
+                 balanced diet and are protein-deficient,
+                 and that’s where protein and fitness products come into the picture.
+            </p>
+
+            <p>
+                A great shift in the mindset of people has led to an increased focus on fitness and health. 
+                An efficient way to increase the protein intake, protein and fitness products can be taken by 
+                people from all walks of life and not just bodybuilders or fitness freaks. So, which are the best
+                 protein and fitness products? Rich in essential elements for staying fit and offering the 
+                 much-needed protein to your body,
+                 protein and fitness products online at GoodKart are available at unbeatable prices.
+            </p>
+
+              
+
+              <h1>
+                TOP HEALTH AND FITNESS TIPS
+              </h1>
+
+               <p>
+                You can never get a sculpted body from watching TV all day long and eating junk food. Getting in 
+                the shape demands strict devotion and efforts. Here are
+                 some health and fitness tips to start your journey to having a better body:
+               </p>
+
+            <ul>
+
+                <li>
+                    <b>Eat right:</b> No matter how difficult this might sound but you have to stay away from sugary
+                     foods. Instead, include lots of fruits and green veggies
+                     in your dietary regime. This will keep your metabolism high and digestive system clean.
+                </li>
+
+                <li>
+                    <b> Exercise daily:</b> Do some sort of physical activity daily for at least half an hour.
+                     If you want to shed some extra kilos real quick, a high-intensity workout routine should be followed.
+                </li>
+                <li>
+                    <b>Keep a check on calories:</b> It is better to keep a track of how many 
+                    calories you consume in a day. This will help you plan out your meals so you eat healthily.
+                     Also, try to have six smaller meals than three large meals in a day.
+                </li>
+              
+               
+              
+               <li>
+                   <b>Get enough sleep:</b> It is vital to have a sound sleep for at
+                    least 8 hours to recharge ourselves. Our body goes through a lot during a day and needs relaxation time, 
+                   and staying up late till night will keep you exhausted the next day.
+               </li>
+               <li>
+                   <b>Stay motivated:</b> Set your fitness goals and keep an optimistic approach towards it. 
+                   Stay motivated and push yourself harder to accomplish your goal of being in good shape.
+               </li>
+            
+                  
+            </ul>
+
+             <h1>HOW TO SELECT HEALTHY PROTEIN AND FITNESS PRODUCTS?
+
+             </h1>
+              
+           <p>
+            With so many options, it becomes challenging to pick a particular protein and fitness product. 
+            First and foremost, you must know your fitness goal and then pick a protein product accordingly. 
+            If you wish to lose weight, then choose those products that have no added sugars in it.
+             For optimum muscle growth, pick a protein-based product that has a high biological value.
+             Those who are allergic to dairy products can buy plant-based proteins.
+           </p>
+           <h1>
+            BEST PROTEIN AND FITNESS PRODUCT AT LYBRATE’S GOODKART
+           </h1>
+           <p>
+              Looking to transform your body? You can explore through a wide range of protein and fitness 
+              products online at GoodKart. We bring to you the best quality products to boost your
+               performance in the gym. The use of these products with healthy lifestyle choices 
+              can definitely make a difference when it comes to fitness and overall wellbeing.
+           </p>
+           
+         
+            
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="./mainProtin.js" >
+
+</script>
