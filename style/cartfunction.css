@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap');
+body
+{
+    margin: 0;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    background-color: #eeeeee;
+}
+    #main-products-display-div {
+      /* border: 1px dashed blue; */
+      height: fit-content;
+      width: 100%;
+      display: flex;
+      
+    }
+    #cart {
+        border: 1px solid #d7d8d8;
+        /* border: 1px solid green; */
+      height: fit-content;
+      width: 800px;
+      margin-left: 250px;
+      margin-bottom: 100px;
+      /* display:grid; */
+      /* justify-content: space-evenly; */
+    }
+    #cart-product-name-div {
+      width: 300px;
+    }
+    #cartimages {
+      /* border: 1px solid rgb(32, 207, 125); */
+      height: 75px;
+      width: 75px;
+    }
+    #cart-images-div {
+        height: 100px;
+        width: 100px;
+        /* border: 1px solid black; */
+    }
+    #all-details-div {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      justify-content: space-around;
+      border-bottom: 1px solid rgb(223, 222, 222);
+      /* border: 1px solid red; */
+    }
+    #sidebar-bill {
+      height: fit-content;
+      width: 400px;
+      border: 1px solid #d7d8d8;
+      /* margin-left: 50px; */
+      background-color: white;
+    }
+    #total-mrp {
+      /* border: 1px dashed red; */
+      display: flex;
+      justify-content: space-between;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    #shipping-charges {
+      /* border: 1px solid red; */
+      display: flex;
+      justify-content: space-between;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    #discount {
+      /* border: 1px solid red; */
+      display: flex;
+      justify-content: space-between;
+      margin-left: 20px;
+      margin-right: 20px;
+      border-bottom: 1px solid rgb(223, 222, 222);
+    }
+    #cart-total-value {
+      /* border: 1px solid red; */
+      display: flex;
+      justify-content: space-between;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    #lybrate-cash {
+      /* border: 1px solid red; */
+      display: flex;
+      justify-content: space-between;
+      margin-left: 20px;
+      margin-right: 20px;
+      border-bottom: 1px solid rgb(223, 222, 222);
+    }
+    #amount {
+      /* border: 1px solid red; */
+      display: flex;
+      justify-content: space-between;
+      margin-left: 20px;
+      margin-right: 20px;
+      border-bottom: 1px solid rgb(223, 222, 222);
+    }
+    #all-payment-details-div {
+      /* border: 3px dashed black; */
+      width: 400px;
+      height: fit-content;
+      margin-left: 20px;
+    }
+    #payment-page-logo-main-div {
+      border: 1px solid #d7d8d8;
+      display: flex;
+      background-color: white;
+      margin-top: 20px;
+    }
+    #payment-page-logo-div1 {
+      height: 100px;
+      width: 100px;
+    }
+    #payment-page-logo-div1 {
+      height: fit-content;
+      /* height: 100px; */
+      width: 100px;
+      /* border: 1px solid green; */
+    }
+    #authority-div {
+      height: 25px;
+      width: 25px;
+      border-radius: 50%;
+      background-color: red;
+      margin: auto;
+      margin-top: 25px;
+    }
+    #payment-page-logo-div2 {
+      height: fit-content;
+      /* height: 100px; */
+      width: 175px;
+      /* border: 1px solid green; */
+    }
+    #safe-and-secure-div {
+      height: 25px;
+      width: 25px;
+      border-radius: 50%;
+      background-color: green;
+      margin: auto;
+      margin-top: 25px;
+    }
+    #payment-page-logo-div3 {
+        height: fit-content;
+      /* height: 100px; */
+      width: 100px;
+      margin-right: 10px;
+      /* border: 1px solid green; */
+    }
+    #best-price-div {
+        height: 25px;
+      width: 25px;
+      border-radius: 50%;
+      background-color: #895b80;
+      margin: auto;
+      margin-top: 25px;
+    }
+    #logo-text1 {
+        font-size: 13px;
+        font-weight: 1200;
+        text-align: center;
+    }
+    #logo-text2 {
+        font-size: 13px;
+        font-weight: 1200;
+        text-align: center;
+    }
+    #logo-text3 {
+        font-size: 13px;
+        font-weight: 1200;
+        text-align: center;
+    }
+    #vertical-line1 {
+        height: 80px;
+        width: 0.5px;
+        margin: auto;
+        background-color: rgb(185, 184, 184);
+    }
+    #vertical-line2 {
+        height: 80px;
+        width: 0.5px;
+        margin: auto;
+        background-color: rgb(185, 184, 184);
+    }
+    #payment-page-logo-main-div1 {
+        height: 100px;
+        width: 400px;
+        border: 1px solid #d7d8d8;
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 20px;
+        background-color: white;
+    }
+    #rapidssl-div {
+        height: fit-content;
+        width: 100px;
+        /* border: 1px solid goldenrod; */
+        text-align: center;
+        margin-top: 25px;
+    }
+    #paymoney-div {
+        height: fit-content;
+        width: 100px;
+        /* border: 1px solid goldenrod; */
+        text-align: center;
+        margin-top: 25px;
+        /* margin-left: 40px; */
+    }
+    #paymoney-div {
+        height: fit-content;
+        width: 100px;
+        /* border: 1px solid goldenrod; */
+        text-align: center;
+        margin-top: 25px;
+    }
+    #lybrate-cash-value-btn {
+        margin-top: 18px;
+        color: #c8311e;
+        height: 25px;
+        background-color: white;
+        border: 1px solid #c8311e;
+        border-radius: 3px;
+        font-weight: 600;
+    }
+    #order-summary {
+        border-bottom: 1px solid #dce0e0;
+        height: 40px;
+        /* margin-left: 10px; */
+        font-weight: 400;
+        margin-top: 10px;
+    }
+    #remove {
+        height: 37px;
+        width: 100px;
+        margin-top: 30px;
+        font-weight: 550;
+        color: #3e4759;
+        background-color: white;
+        border: 1px solid rgb(194, 191, 191);
+        border-radius: 3px;
+        margin-left: 50px;
+    }
+    #remove:hover {
+        background-color: #ecebeb;
+        cursor: pointer;
+    }
+    #cart {
+        background-color: white;
+    }
+    #cart-product-price-div {
+        display: flex;
+        gap: 5px;
+        margin-top: 20px;
+        margin-left: 50px;
+    }
+    #max-price-ptag {
+        text-decoration: line-through;
+        font-weight: 425;
+        color:#3e4759
+    }
+    #off-price-ptag {
+        color: #c8311e;
+        font-weight: 500;
+    }
+    #product-name-ptag {
+        font-weight: 390;
+    }
+    #cart-product-name-div {
+        margin-top: 20px;
+    }
+    #order-summary-ptag {
+        margin-left: 20px;
+        font-weight: 400;
+    }
+    #lybrate-cash-text {
+        color: #188516;
+        font-weight: 650;
+    }
+    #amount-payable-text {
+        font-weight: 400;
+        font-size: 20px;
+    }
+    #amount-payable-value {
+        font-weight: 400;
+        font-size: 20px;
+    }
+    #proceed-to-payment-div {
+        height: 100px;
+        width: 200px;
+        border: 1px solid red;
+        display: inline-block;
+    }
+    #proceed-to-payment-btn {
+        background-color: #c82506;
+        color: white;
+        font-size: 18px;
+        height: 40px;
+        width: fit-content;
+        border: none;
+        border-radius: 3px;
+        font-weight: 600;
+        margin-top: 20px;
+    }
+    #proceed-to-payment-btn:hover {
+        cursor: pointer;
+        background-color: #ac1c09;
+    }
+    
