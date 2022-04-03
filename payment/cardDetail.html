@@ -194,7 +194,7 @@
         var cardNumber = document.getElementById("cardNo").value
         var cvv = document.getElementById("cvv").value
         
-        if(cardNumber ==="9876765454322345" && cvv==="123"){
+        if((cardNumber.length=16) && (cvv.length=3)){
             
             alert("otp sent successfully")
             document.getElementById("otpbox").style.visibility="visible";
