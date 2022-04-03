@@ -48,21 +48,14 @@
         justify-content: center;
     }
 
-    #search {
+    /* #search {
         width: 45%;
         justify-content: center;
-    }
+    } */
 
 
-    #searchBox {
-        width: 100%;
-        padding: 10px;
-        background-color: rgb(222, 222, 222);
-        border: none;
-        justify-content: center;
-        margin-bottom: 8px;
-    }
-
+   
+/* 
     #search li {
         display: none;
         border: 1px solid rgb(235, 229, 229);
@@ -74,7 +67,7 @@
         position: relative;
         left: -50px;
         justify-content: center;
-    }
+    } */
 
     #lebrateCash> {
         width: 35%;
@@ -226,7 +219,7 @@
        
     }
 
-    /*----------////----css start--------slideshow top----------------------////------------------------*/
+    /* ----------////----css start--------slideshow top----------------------////------------------------
     #slideShow{
         width:84.9%;
         margin-left:8.5%;
@@ -236,7 +229,7 @@
         width: 100%;
         height: 250px;
 
-    }
+    } */
 
     /*------------/////--css start-------------bottom part written information-----------//////----------------*/
     #informationParagrahBottom {
