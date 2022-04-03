@@ -1,15 +1,16 @@
         @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap'); 
         body{
             font-family: 'IBM Plex Sans Arabic', sans-serif;
+            margin: 0;
         }
         #navbarmaindiv{
-            margin-top: -0.5%;
+            /* margin-top: -0.5%; */
             justify-content: space-between;
             display: flex;
             height: 50px;
             width: 100%;
             background-color: #c82506;;
-            border: 1px solid black;
+            /* border: 1px solid black; */
         }
         #navbartextdiv{
             display: flex;
@@ -35,7 +36,7 @@
         }
 
         #background-img-div{
-            border: 1px solid black;
+            border-top: 1px solid #c82506;
             color: rgb(255, 255, 255);
             height: 500px;
             width: 100%;
@@ -85,12 +86,15 @@
         height: 46px;
         margin-top: 20px;
         margin-bottom: 32px;
+        display: flex;
+        align-items: center;
        }
        #search{
+        padding-left: 10px;
         font-size: 14px;
         position: relative;
         vertical-align: top;
-        Height: 40px;
+        Height: 41px;
         width: 650px;
             
        }
