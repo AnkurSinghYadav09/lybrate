@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Card Details | Lybarte</title>
+    <link rel="icon" type="image/x-icon" href="https://www.lybrate.com/img/push-crew/logo_192_by_192.png">
+    <link rel="stylesheet" href="../footer/footer.css">
+    <link rel="stylesheet" href="../header footer/shopingheader.css">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap");
+        body{
+            font-family:"IBM Plex Sans Arabic", sans-sarif;
+            margin: 0;
+            background-color: hsl(0,0%,88%);
+        }
+        #paymentImage{
+            width: 800px;
+            margin:auto;
+            height: 140px;
+        }
+        #paymentImage>img{
+            width: 100%;
+            height: 100%;
+        }
+        #mainPayementdiv{
+            padding: 20px;
+            width: 780px;
+            height: auto;
+            margin: auto;
+            display: flex;
+          
+
+        }
+        #leftSide{
+            width: 300px;
+            height: 500px;
+            padding: 20px;
+           
+            box-shadow: -10px 0px 3px 0px  blue
+
+        }
+        #leftSideTop{
+            display: flex;
+            justify-content: space-between;
+        }
+        #leftSideTop>div>img{
+            width: 15px;
+            height: 15px;
+            margin-right: 5px;
+            
+        }
+        #leftSideTop>div:nth-child(1){
+            display: flex;
+            gap: 5px;
+            cursor: pointer;
+        }
+        #leftSideTop>div:nth-child(2){
+            font-weight: bold;
+            color: gray;
+        }
+        .wincashback{
+            width: auto;
+            height: auto;
+            padding: 10px;
+            background-color: rgb(75, 75, 235);
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 30px;
+            font-size: small;
+        }
+        #rightSide{
+            width: 400px;
+            height: 500px;
+            padding: 20px;
+            margin: -25px 0 0 15px;
+            padding-left: 40px;
+            text-align: center;
+            padding-bottom: 50px;
+            
+           
+        }
+        #rightSide>h4:nth-child(1){
+             color: grey;
+       
+        }
+       
+       #h1tag{
+           font-family: sans-serif;
+           color: rgb(68, 68, 68);
+           margin-top: 50px;
+       }
+       #cardNo{
+           width: 300px;
+           height: 30px;
+           font-size: 17px;
+           text-align: center;
+           
+       }
+       #expcvv{
+           display: flex;
+           justify-content: space-between;
+       }
+       #expiry {
+           height: 27px;
+           margin-right: 10px;
+           
+       }
+       #cvv{
+           height: 25px;
+           margin-left: 10px;
+           text-align: center;
+           
+       }
+    
+       #nameOnCard{
+           height: 30px;
+           width:300px;
+           font-size: 17px;
+           text-align: center;
+           margin-bottom: 20px;
+           
+       }
+       #proceed{
+           height: 25px;
+           font-size: 20px;
+           text-align: center;
+           margin: 20px 10px 10px 10px;
+           background-color: blue;
+           color: aliceblue;
+           border-radius: 10px;
+           padding: 10px;
+           cursor: pointer;
+
+       }
+       #otpbox{
+           visibility: hidden;
+           font-size: large;
+           color: red;
+           margin-top: 10px;
+           margin-bottom: 100px;
+           z-index: 1;
+       }
+       
+       #otpValidator{
+           height: 20px;
+           width: 120px;
+
+       }
+       #validotp{
+           background-color: blue;
+           color: white;
+           border: none;
+           border-radius: 5px;
+           margin-left: 5px;
+           height: 25px;
+       }
+       #footer-container
+       {
+           margin-top: 50px;
+       }
+    </style>
+</head>
+<body>
+    <div id="header-container"></div>
+    <div id="paymentImage"> <img src="https://secure.payu.in/StaticBannerAd?image=CiUBoo_header.png" alt=""></div>
+    <div id="mainPayementdiv">
+        <div id="leftSide">
+            <div id="leftSideTop">
+                <div onclick="location.href='Payment.html';"><img src="https://api.payu.in/public/assets/images/back.svg" alt="">Back</div> 
+                 <div>Lybrate</div>
+                
+             </div>
+             <h1 id="h1tag">Enter Your Card Detail</h1>
+             <p>Total Payable Amount </p><h3 id="paybleammount">₹</h3>
+             <p style="font-size: small;color: grey;">Your transiction ID : ie3897498248</p>
+             <div class="wincashback" >Win up to Rs. 25 cashback on min transaction of Rs. 100 on Amazon Pay Wallet. Valid till 31st March 2022</div>
+        </div>
+
+        <div id="rightSide">
+            <h4>CARDS (CREDIT/DEBIT)</h4>
+            <div > <p style="margin-bottom: 5px; font-size: 19px; ">Credit/Debit Card No. </p> <input  id="cardNo" type="number" value="" placeholder="Enter Card Number Here"></div>
+            <div > <p style="margin-bottom: 5px; font-size: 19px; ">Expiry Date </p> <input id="expiry" type="month" value="" placeholder="Enter Card Number Here"></div>
+            <div > <p style="margin-bottom: 5px; font-size: 19px; ">CVV </p> <input id="cvv" type="number" value="" placeholder="Enter Your CVV"></div>
+            <div > <p style="margin-bottom: 5px; font-size: 19px; ">Card Holder's Name </p> <input id="nameOnCard" type="text" value="" placeholder="Enter Name As On Card "></div>
+            <div  id="checkbox"><input type="checkbox">Save this option securely for faster payment</div>
+            <div id="proceed" onclick="process()">  Proceed</div>
+           
+            <div id="otpbox"><p>Enter OTP</p> <input id="otpValidator" type="number" value=""><button id="validotp" onclick="location.href='successful.html'">Validate OTP</button></div>
+
+        </div>
+    </div>
+  
+    <div id="footer-container"></div>
+</body>
+</html>
+
+<script>
+
+    let cartdata=JSON.parse(localStorage.getItem("cart"));
+    let total=0;
+    for(let i=0; i<cartdata.length; i++)
+    {
+        total+=cartdata[i].priceDTO.price;
+    }
+    document.getElementById("paybleammount").innerText=`₹${total}`
+    function process(){
+       
+        var cardNumber = document.getElementById("cardNo").value
+        var cvv = document.getElementById("cvv").value
+        
+        if(cardNumber ==="9876765454322345" && cvv==="123"){
+            
+            alert("otp sent successfully")
+            document.getElementById("otpbox").style.visibility="visible";
+            
+
+        }
+        else{
+            alert("Card No and cvv are not Maching")
+        }
+        
+    }
+</script>
+<script type="module">
+    import shoppingheader from "../header footer/shoppingheader.js";
+    let header_container = document.getElementById("header-container");
+    header_container.innerHTML = shoppingheader();
+  
+  
+    countcartfn();
+    function countcartfn()
+    {
+        let cartdata=JSON.parse(localStorage.getItem("cart"))||[];
+        
+        let cartcount=document.getElementById("cart-count");
+        cartcount.innerText=null;
+        cartcount.innerText=cartdata.length;
+        localStorage.setItem("cart", JSON.stringify(cartdata));
+    };
+  </script>
+  <script src="../search/search.js"></script>
+  <script src="../header footer/shoppingheader other js.js"></script>
+  <script src="../header footer/inputsearch.js"></script>
+  
+  
+  <script type="module">
+    import footerfun from "../footer/footer.js";
+    let footer = document.getElementById("footer-container");
+    footer.innerHTML = footerfun();
+  </script>

@@ -49,17 +49,9 @@ const clear_dropdown=()=>
 const shopbycategory=()=>
 {
     let drop=document.getElementById("shop-by-category-drop");
-    // drop.addEventListener("click", function()
-    // {
-    //     console.log("hello")
-    // })
     drop.innerHTML=null;
 
     let shealth_div=document.createElement("div");
-    // shealth_div.addEventListener("click", function()
-    // {
-    //     location.href="../"
-    // })
     shealth_div.addEventListener("mouseenter", shopbycategory);
     shealth_div.addEventListener("mouseout", clear_dropdown);
     shealth_div.addEventListener("scroll", clear_dropdown);
@@ -92,12 +84,6 @@ const shopbycategory=()=>
 
 
     let fd_div=document.createElement("div");
-    // fd_div.addEventListener("click", function()
-    // {
-    //     console.log("hello")
-    //     location.href="../Food And Drink/mainFood.html"
-    // })
-
     fd_div.addEventListener("mouseenter", shopbycategory);
     fd_div.addEventListener("mouseout", clear_dropdown("shop-by-category-drop"));
 
@@ -108,7 +94,6 @@ const shopbycategory=()=>
     fdleft_div.innerHTML='<svg xmlns="http://www.w3.org/2000/svg" height="20px" width="20px" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path ng-attr-d="{{$root.icons[ctrl.p]}}" d="M22.071,14.332 C21.639,12.883 20.873,11.913 19.795,11.451 C18.600,10.938 17.323,11.190 16.546,11.443 L16.546,10.607 C17.455,10.513 18.154,10.182 18.623,9.618 C19.424,8.655 19.235,7.386 19.226,7.333 C19.205,7.202 19.116,7.093 18.992,7.049 C18.101,6.728 17.181,7.196 16.546,7.665 L16.546,7.518 C16.546,7.252 16.331,7.036 16.066,7.036 C15.801,7.036 15.587,7.252 15.587,7.518 L15.587,11.496 C15.320,11.412 15.061,11.345 14.808,11.296 L14.808,7.603 L13.023,4.175 L13.023,0.960 L3.172,0.960 L3.172,4.178 L1.438,7.607 L1.438,23.520 L14.808,23.520 L14.808,21.861 C14.973,21.817 15.142,21.765 15.317,21.696 C16.142,21.369 16.840,21.711 16.885,21.733 C18.618,22.542 20.030,21.009 20.536,20.083 C22.563,16.316 22.128,14.526 22.071,14.332 ZM18.533,7.677 C18.540,8.013 18.490,8.651 18.072,9.154 C17.740,9.552 17.222,9.786 16.546,9.870 L16.546,8.600 C17.019,8.167 17.833,7.589 18.533,7.677 ZM13.570,7.304 L5.914,7.304 L4.684,4.807 L12.270,4.807 L13.570,7.304 ZM12.064,1.924 L12.064,3.844 L4.131,3.844 L4.131,1.924 L12.064,1.924 ZM3.770,5.123 L4.844,7.304 L2.667,7.304 L3.770,5.123 ZM2.397,8.268 L5.165,8.268 L5.165,22.556 L2.397,22.556 L2.397,8.268 ZM6.124,22.556 L6.124,8.268 L13.849,8.268 L13.849,11.189 C13.248,11.178 12.695,11.278 12.196,11.496 C10.940,12.045 10.506,13.128 10.506,13.134 C9.372,15.414 10.927,18.604 11.779,20.354 C12.274,21.369 12.969,21.902 13.849,21.963 L13.849,22.556 L6.124,22.556 ZM19.695,19.621 C19.653,19.697 18.636,21.490 17.307,20.868 C17.262,20.845 16.206,20.309 14.966,20.799 C13.832,21.248 13.159,20.996 12.623,19.894 C11.915,18.442 10.442,15.418 11.380,13.528 C11.410,13.456 11.966,12.153 13.775,12.153 C14.339,12.153 15.026,12.280 15.858,12.612 C15.986,12.663 16.130,12.656 16.253,12.593 C16.269,12.584 17.981,11.720 19.419,12.337 C20.222,12.682 20.806,13.446 21.150,14.599 C21.154,14.615 21.533,16.206 19.695,19.621 Z"></path></svg>';
     
     let fd=document.createElement("p");
-    // fd.href="../Food And Drink/mainFood.html";
     fd.innerText="Food & Drink";
     fd.style.color="black";
     fdleft_div.append(fd);
@@ -460,12 +445,4 @@ const childdropfn=()=>
     p6.style.color="black";
 
     drop.append(p1, hr1, p2, hr2, p3, hr3, p4, hr4, p5, hr5, p6);
-}
-
-function cartcountfn()
-{
-    let getcart=JSON.parse(localStorage.getItem("cart"))||[];
-    let cartcount=document.getElementById("cart-count")
-    cartcount.innerText=`${getcart.length}`;
-    console.log("hello")
 }

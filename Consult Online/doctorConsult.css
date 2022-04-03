@@ -1,0 +1,482 @@
+        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap'); 
+        body{
+            font-family: 'IBM Plex Sans Arabic', sans-serif;
+            margin: 0;
+        }
+        #navbarmaindiv{
+            justify-content: space-between;
+            display: flex;
+            height: 50px;
+            width: 100%;
+            background-color: #c82506;
+        }
+        #navbartextdiv{
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            margin-right: 12%;
+        }
+        #navbarimgdiv{
+            margin-left: 12%;
+        }
+        #navbarimg{
+            height:30px;
+            margin-top: 10px;
+
+        }
+        .navbarp1{
+            color:#ffffff;
+            text-decoration: none;
+            font-weight: 401;
+        }
+        a{
+            text-decoration: none;
+        }
+
+        #background-img-div{
+            border-top: 1px solid #c82506;
+            color: rgb(255, 255, 255);
+            height: 500px;
+            width: 100%;
+            background-image: url(https://www.lybrate.com/img/backgroundImage-lybrateKeyboard.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+        #background-img-div-child{
+            height: 300px;
+            width: 800px;
+            /* border: 1px solid white; */
+            margin:auto;
+           justify-content: center;
+           margin-top: 100px;
+       }
+       #beatp1div{
+        /* border: 1px solid white; */
+        height:40px;
+        text-align: center;
+       }
+       #beatp1{
+        margin-top: 1px;
+        font-size: 22px;
+        color: #f5f5f5;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-weight: 100;
+       }
+       #getp1div{
+        /* border: 1px solid white; */
+        height:50px;     
+        text-align: center
+
+       }
+       #getp1{
+
+        margin-top: 5px;
+        font-size: 33px;
+        font-weight: 40;
+        font-family: inherit;
+        color: inherit;
+
+       }
+       #searchdiv{
+        /* border: 1px solid white; */
+        height: 46px;
+        margin-top: 20px;
+        margin-bottom: 32px;
+       }
+       #search{
+        font-size: 14px;
+        position: relative;
+        vertical-align: top;
+        Height: 40px;
+        width: 650px;
+            
+       }
+       .search:focus
+        {
+            outline:none;
+        }
+       #searchbtn{
+        background: #c82506;
+        color: #fff;
+        cursor: pointer;
+        font-size: 18px;
+        Height: 46px;
+        margin-left: -10px;
+        width: 140px;
+        /* position:fixed; */
+        border:none;
+        
+
+       }
+       #logodiv{
+        display: flex;
+        /* border: 1px solid white; */
+       ;
+    }
+    #logodiv-child{
+        display: flex;
+        margin:auto;
+        /* border: 1px solid white; */
+        width: 500px;
+        height:100px;
+        justify-content:space-between;
+       }
+       .logo-img{
+           height:55px;
+            margin-left: 25px ;
+
+       }
+       .arrow{
+        margin-top: -18px;
+        font-size:60px;
+       }
+       .d-point{
+        font-size: 13.5px;
+        font-weight: 300;
+       }
+      #heart-logo{
+          width:100%;
+          height: 370px;
+          border: 1px solid #e5e5e5;
+          background-color: #e5e5e5;
+
+      }
+      #heart-logo-child1{
+          display:flex;
+          margin:auto;
+         /* border: 1px solid black; */
+         width: 1100px;
+         height: 250px;
+         justify-content:space-between;
+        
+
+      }
+      #heart-logo-child{
+        /* border: 1px solid black; */
+        height: 200px;
+        width: 250px;
+        
+
+      }
+      #Lybratep1{
+        color: gray;
+        font-size:30px ;
+        text-align: center;
+        font-weight:400;
+      }
+      .heart-logo-img{
+         height:85px;
+         margin-left: 80px;
+
+      }
+      .verifyedp1{
+          margin-top: 14px;
+        font-size: 18px;
+        font-weight: 405;
+
+        text-align: center;
+      }
+      .time-div{
+        /* border: 1px solid black; */
+        width:200px;
+        margin-top:50px;
+        margin:auto;
+        margin-top: -4px;
+
+      }
+     .timep1{
+       margin-top:-14px;
+       text-align: center;
+       font-size: 14px;
+       color: gray;
+
+      }
+
+     #diet-div-container{
+        /* border: 1px solid black; */
+        height: 500px;
+        width: 100%;
+        
+     }
+     #topp1{
+         font-size: 26px;
+         color: rgb(99, 99, 99);
+         text-align:center;
+         
+     }
+
+     .main-diet-div1{
+        display: flex;
+        gap:18px;
+        /* border: 1px solid black; */
+        width: 1066px;
+        margin:auto;
+        height: 150px;
+        margin-bottom: 20px;
+     }
+     .main-diet-div2{
+        display: flex;
+        gap:18px;
+        /* border: 1px solid black; */
+        width: 795px;
+        height: 150px;
+        margin:auto;
+     }
+     .diet-div1:hover{
+         text-decoration: underline;
+         
+     }
+     .diet-div1{
+        text-align: center;
+        line-height: 150px;
+        color:white;
+        font-size: 18px;
+        font-weight: 550;
+        width: 250px;
+        height: 150px;
+       background-image: url(https://nu.lybcdn.com/img/dietitian-nutritionist.jpg);
+       background-repeat: cover;
+     }
+     .diet-div2:hover{
+         text-decoration: underline;
+         
+     }
+    
+     .diet-div2{
+        text-align: center;
+        line-height: 150px;
+        color:white;
+        font-size: 18px;
+        font-weight: 550;
+        width: 250px;
+        height: 150px;
+        background-repeat: cover;
+        background-image: url(https://nu.lybcdn.com/img/gynaecologist.jpg);        
+    }
+    .diet-div3:hover{
+         text-decoration: underline;
+         
+     }
+    .diet-div3{
+        text-align: center;
+        line-height: 150px;
+        color:white;
+        font-size: 18px;
+        font-weight: 550;
+        width: 250px;
+        height: 150px;
+        background-repeat: cover;
+        background-image: url(https://nu.lybcdn.com/img/psychologist.jpg);         
+    }
+    .diet-div4:hover{
+         text-decoration: underline;
+         
+     }
+    .diet-div4{
+        text-align: center;
+        line-height: 150px;
+        color:white;
+        font-size: 18px;
+        font-weight: 550;
+        width: 250px;
+        height: 150px;
+        background-repeat: cover;
+        background-image: url(https://nu.lybcdn.com/img/dermatologist.jpg);         
+    }
+    .diet-div5:hover{
+         text-decoration: underline;
+         
+     }
+    
+    .diet-div5{
+        text-align: center;
+        line-height: 150px;
+        color:white;
+        font-size: 18px;
+        font-weight: 550;
+        width: 250px;
+        height: 150px;
+        background-repeat: cover;
+        background-image: url(https://nu.lybcdn.com/img/sexologist.jpg);         
+    }
+    .diet-div6:hover{
+         text-decoration: underline;
+         
+     }
+    .diet-div6{
+        text-align: center;
+        line-height: 150px;
+        color:white;
+        font-size: 18px;
+        font-weight: 550;
+        width: 250px;
+        height: 150px;
+        background-repeat: cover;
+        background-image: url(https://nu.lybcdn.com/img/ayurveda.jpg);        
+    }
+    .diet-div7:hover{
+         text-decoration: underline;
+         
+     }
+    .diet-div7{
+        text-align: center;
+        line-height: 150px;
+        color:white;
+        font-size: 18px;
+        font-weight: 550;
+        width: 250px;
+        height: 150px;
+        background-repeat: cover;
+        background-image: url(https://nu.lybcdn.com/img/homeopath.jpg);         
+    }
+    #btnDiv:hover{
+        border: 2px solid black;
+
+    }
+    #btnDiv{
+      display: flex;
+      height:50px;
+      width: 160px;
+      margin: auto;
+      margin-top: 20px;
+
+    }
+    #viewbtn{
+        margin-left: 10px;
+        margin-top:10px;
+        font-size :20px;
+        border:none !important;
+        background-color: #ffffff;
+        color:#c82506;
+    }
+    #btnimg{
+        margin-top:11px;
+
+    }
+    
+    #doctor-main-div{
+        /* border: 1px solid black; */
+       height: 1500px;
+        width: 100%;
+    }
+    #doctor-child-div1{
+        display: flex;
+        /* border: 1px solid black; */
+        height: 250px;
+        width: 900px;
+        margin: auto;
+        justify-content: space-between;
+
+    }
+
+    #doctor-child-div2{
+        gap: 15px;
+        display: flex;
+        /* margin-bottom: 20px; */
+       
+        /* border: 1px solid black; */
+
+    }
+    .doctor-img{
+        width: 100px;
+        height: 100px;
+        border-radius: 5px;
+    }
+    .vote-logo-div{
+        gap:8px;
+        display: flex;
+    }
+    .vote-logo{
+        height: 20px;
+        margin-top: 3px;
+    }
+    .heart-red{
+        margin-top: 1px;
+        font-size:14px;
+        color: #c82506;
+    }
+    .year{
+        margin-top: 4px;
+        font-size:14px;
+        color:#808080;
+        
+    }
+    .rupees{
+        margin-top: 3px;
+        font-size:14px;
+        color:#808080;
+    }
+    .name-red:hover{
+        text-decoration: underline;
+
+    }
+    .name-red{
+        margin-top: 1px;
+        font-size:18px;
+        color: #c82506;
+        font-weight: 550;
+    }
+    .pprofession1{
+        margin-top: -18px;
+        color:#808080;
+        font-weight: 550;
+        font-size:16px;
+    }
+    .pprofession2{
+        margin-top: -15px;
+        font-weight: 405;
+        color:#abaaaa;
+        font-size:16px;
+    }
+   .pprofession3{
+         margin-top: -15px;
+        font-weight: 405;
+        color:#abaaaa;
+        font-size:16px;
+   } 
+   #consultBtn:hover{
+       background-color:red;
+
+   }
+   #consultBtn{
+       color:#ffffff;
+       background-color:#c82506;
+       width: 260px;
+       height: 40px;
+       font-size: 15px;
+       font-weight: 541;
+       border: none;
+
+   }
+   #doctor-details-div{
+       display: flex;
+       width: 100%;
+   background-color: #e5e5e5;
+
+   }
+   #doctor-details-child-div{
+       width:75%;
+       margin:auto;
+
+   }
+   #doctor-details-child-div>h3{
+       font-weight: 100;
+       font-size: 22px;
+      color:#333;
+   }
+   #doctor-details-child-div>p{
+       font-weight: 100;
+       /* font-size: 22px; */
+      color:#333;
+   }
+   #doctor-details-child-div>h2{
+       font-weight: 100;
+       font-size: 19px;
+      color:#333;
+   }
+   .para-red{
+       color: #E04F48;
+       /* font-weight: 100; */
+   }

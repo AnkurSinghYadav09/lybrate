@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart Review | Lybrate</title>
+    <link rel="icon" type="image/x-icon" href="https://www.lybrate.com/img/push-crew/logo_192_by_192.png">
+    <link rel="stylesheet" href="../footer/footer.css">
+    <link rel="stylesheet" href="../header footer/shopingheader.css">
+  </head>
+  <link rel="stylesheet" href="./style/cartfunction.css" />
+  <body>
+    <div id="header-container"></div>
+
+
+    <div id="main-products-display-div">
+      <div id="cart"></div>
+      <div id="all-payment-details-div">
+        <div id="sidebar-bill">
+          <div id="order-summary"><p id="order-summary-ptag">ORDER SUMMARY</p></div>
+          <div id="total-mrp">
+            <div id="display-mrp-div">
+              <p>Total MRP</p>
+              <p id="no-of-items-ptag"></p>
+            </div>
+            <div id="display-price-div">
+              <p id="total-price">0</p>
+            </div>
+          </div>
+          <div id="shipping-charges">
+            <div id="shipping-charges-div">
+              <p id="total-shipping-charges">Shipping Charges</p>
+            </div>
+            <div id="shipping-charges-price">
+              <p id="total-shipping price">₹0</p>
+            </div>
+          </div>
+          <div id="discount">
+            <div id="discount-value">
+              <p id="discount-charges">Discount</p>
+            </div>
+            <div id="discount-price">
+              <p id="discount-price-display">0</p>
+            </div>
+          </div>
+          <div id="cart-total-value">
+            <div id="cart-total-charges">
+              <p id="cart-total-charges-display">Cart Total</p>
+            </div>
+            <div id="cart-total-price">
+                <div id="total">
+                    <p id="price"></p>
+                  </div>
+            </div>
+          </div>
+          <div id="lybrate-cash">
+            <div id="lybrate-cash-div">
+              <p id="lybrate-cash-text">Pay by LybrateCash</p>
+            </div>
+            <div id="lybrate-cash-value-div">
+              <a href="../ligin sign/index.html"><button id="lybrate-cash-value-btn">Login/SignUp</button></a>
+            </div>
+          </div>
+          <div id="amount">
+            <div id="amount-payable-div">
+              <p id="amount-payable-text">Amount Payable</p>
+            </div>
+            <div id="amount-payable-value-div">
+              <p id="amount-payable-value"></p>
+            </div>
+          </div>
+        </div>
+        <div id="payment-page-logo-main-div">
+          <div id="payment-page-logo-div1">
+            <div id="authority-div">
+              <ly-svg-icon
+                class="ly-cart__cart-auth-icon authentic ng-isolate-scope"
+                p="cart-authentic-product"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="100%"
+                  width="100%"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 24 24"
+                  fill="white"
+                >
+                  <path
+                    ng-attr-d="{{$root.icons[ctrl.p]}}"
+                    d="M16.967,7.878A8.518,8.518,0,0,1,11.5,5.983,8.518,8.518,0,0,1,6.029,7.878,10.288,10.288,0,0,0,11.5,18.012,10.288,10.288,0,0,0,16.967,7.878ZM10.709,14L8.9,12.311l0.808-.76,1,0.934,2.726-2.544L14.246,10.7Z"
+                  ></path></svg></ly-svg-icon>
+            </div>
+            <p id="logo-text1">100% Authentic Product</p>
+          </div>
+          <div id="vertical-line1"></div>
+          <div id="payment-page-logo-div2">
+            <div id="safe-and-secure-div">
+              <ly-svg-icon
+                class="ly-cart__cart-auth-icon payments ng-isolate-scope"
+                p="cart-secure-payments"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="100%"
+                  width="100%"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 24 24"
+                  fill="white"
+                >
+                  <path
+                    ng-attr-d="{{$root.icons[ctrl.p]}}"
+                    d="M16.58,9.271h0.551V15.99H6.119V15.385H16.58V9.271Zm-4.917,1.718H10.919a0.977,0.977,0,0,1-.262.56,0.794,0.794,0,0,1-.276.212l0.8,1.218-0.289.227L9.748,11.473l0.317-.03a0.505,0.505,0,0,0,.344-0.174,0.6,0.6,0,0,0,.145-0.28H9.631V10.6H10.52a0.489,0.489,0,0,0-.11-0.174,0.531,0.531,0,0,0-.365-0.167H9.631V9.861h2.031v0.393H10.747a1.063,1.063,0,0,1,.151.341h0.765v0.393Zm4.621-2.974v7.03H5.017V8.015H16.284Zm1.184,2.262h0.551V17H7.007V16.391H17.468V10.277Zm-4.607,1.256a2.475,2.475,0,0,0-.654-1.725,2.027,2.027,0,0,0-1.556-.7,2.063,2.063,0,0,0-1.563.7L9.08,9.816a2.493,2.493,0,0,0-.64,1.718,2.449,2.449,0,0,0,.64,1.71,2.05,2.05,0,0,0,1.57.719,2.023,2.023,0,0,0,1.557-.719A2.439,2.439,0,0,0,12.861,11.533Z"
+                  ></path></svg></ly-svg-icon>
+            </div>
+            <p id="logo-text2">Safe and Secure Payments</p>
+          </div>
+          <div id="vertical-line2"></div>
+          <div id="payment-page-logo-div3">
+            <div id="best-price-div">
+              <ly-svg-icon
+                class="ly-cart__cart-auth-icon returns ng-isolate-scope"
+                p="cart-best-price"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="100%"
+                  width="100%"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 24 24"
+                  fill="white"
+                >
+                  <path
+                    ng-attr-d="{{$root.icons[ctrl.p]}}"
+                    d="M21.263,20.894 L19.112,20.499 C18.825,20.429 18.563,20.568 18.419,20.801 L17.368,22.659 C17.105,23.100 16.436,23.077 16.197,22.612 L13.879,17.804 C14.213,17.688 14.548,17.479 14.835,17.247 L15.599,16.597 C15.719,16.504 15.886,16.457 16.030,16.434 L17.033,16.364 C18.061,16.272 18.969,15.784 19.542,15.041 L21.932,20.011 C22.171,20.476 21.741,21.010 21.263,20.894 ZM19.423,10.953 C19.136,11.278 18.945,11.696 18.921,12.137 L18.849,13.113 C18.778,14.135 17.941,14.948 16.890,15.017 L15.886,15.087 C15.432,15.110 15.002,15.296 14.667,15.575 L13.903,16.155 C13.114,16.829 11.943,16.829 11.131,16.155 L10.366,15.505 C10.031,15.226 9.601,15.041 9.147,15.017 L8.144,14.948 C7.092,14.878 6.256,14.065 6.184,13.043 L6.112,12.068 C6.088,11.626 5.897,11.208 5.611,10.883 L4.941,10.140 C4.248,9.373 4.248,8.235 4.941,7.445 L5.611,6.702 C5.897,6.377 6.088,5.959 6.112,5.518 L6.184,4.542 C6.256,3.520 7.092,2.707 8.144,2.637 L9.147,2.568 C9.601,2.545 10.031,2.359 10.366,2.080 L11.131,1.499 C11.919,0.826 13.090,0.826 13.903,1.499 L14.667,2.150 C15.002,2.428 15.432,2.614 15.886,2.637 L16.890,2.707 C17.941,2.777 18.778,3.590 18.849,4.612 L18.921,5.587 C18.945,6.029 19.136,6.447 19.423,6.772 L20.092,7.515 C20.785,8.282 20.785,9.420 20.092,10.209 L19.423,10.953 ZM15.323,4.881 C15.323,4.770 15.232,4.681 15.118,4.681 L9.938,4.681 C9.824,4.681 9.733,4.770 9.733,4.881 L9.733,5.746 C9.733,5.857 9.824,5.945 9.938,5.945 L11.490,5.945 C12.038,5.945 12.562,6.278 12.791,6.766 L9.938,6.766 C9.824,6.766 9.733,6.855 9.733,6.966 L9.733,7.742 C9.733,7.853 9.824,7.941 9.938,7.941 L12.768,7.941 C12.540,8.451 12.038,8.762 11.467,8.762 L9.916,8.762 C9.802,8.762 9.710,8.851 9.710,8.961 L9.710,10.159 C9.710,10.203 9.733,10.248 9.779,10.292 L12.471,12.953 C12.494,12.998 12.562,13.020 12.608,13.020 L13.840,13.020 C13.909,13.020 14.000,12.953 14.023,12.887 C14.045,12.798 14.045,12.732 13.977,12.665 L11.285,10.004 L11.467,10.004 C12.745,10.004 13.863,9.139 14.137,7.941 L15.095,7.941 C15.209,7.941 15.300,7.853 15.300,7.742 L15.300,6.966 C15.300,6.855 15.209,6.766 15.095,6.766 L14.137,6.766 C14.068,6.433 13.931,6.145 13.749,5.879 L15.095,5.879 C15.209,5.879 15.300,5.790 15.300,5.679 L15.323,5.679 L15.323,4.881 ZM8.024,16.388 L9.028,16.457 C9.195,16.457 9.338,16.527 9.458,16.620 L10.247,17.247 C10.533,17.479 10.844,17.665 11.202,17.804 L8.861,22.612 C8.645,23.100 7.976,23.123 7.713,22.659 L6.662,20.801 C6.519,20.568 6.256,20.452 5.969,20.499 L3.818,20.894 C3.293,21.010 2.862,20.476 3.101,20.011 L5.491,15.064 C6.088,15.807 6.997,16.318 8.024,16.388 Z"
+                  ></path></svg></ly-svg-icon>
+            </div>
+            <p id="logo-text3">Assured Best Price</p>
+          </div>
+        </div>
+        <div id="payment-page-logo-main-div1">
+            <div id="rapidssl-div">
+                <img ng-src="https://www.lybrate.com/img/rapid-ssl.png" src="https://www.lybrate.com/img/rapid-ssl.png">
+            </div>
+            <div id="paymoney-div">
+                <img ng-src="https://www.lybrate.com/img/payu-money.png" src="https://www.lybrate.com/img/payu-money.png">
+            </div>
+            <div id="paymoney-div">
+                <img ng-src="https://assets.lybrate.com/q_auto,f_auto/imgs/product/icons/PayPal_logo.png" src="https://assets.lybrate.com/q_auto,f_auto/imgs/product/icons/PayPal_logo.png">
+            </div>
+        </div>
+        <a href="../payment/cardDetail.html"><button id="proceed-to-payment-btn">Proceed To Payment</button></a>
+      </div>
+    </div>
+    <div id="footer-container"></div>
+  </body>
+</html>
+<script src="./scripts/cartfunction.js"></script>
+
+<script type="module">
+  import shoppingheader from "../header footer/shoppingheader.js";
+  let header_container = document.getElementById("header-container");
+  header_container.innerHTML = shoppingheader();
+
+
+  countcartfn();
+  function countcartfn()
+  {
+      let cartdata=JSON.parse(localStorage.getItem("cart"))||[];
+      
+      let cartcount=document.getElementById("cart-count");
+      cartcount.innerText=null;
+      cartcount.innerText=cartdata.length;
+      localStorage.setItem("cart", JSON.stringify(cartdata));
+  };
+</script>
+
+
+<script src="../search/search.js"></script>
+<script src="../header footer/shoppingheader other js.js"></script>
+<script src="../header footer/inputsearch.js"></script>
+
+<script type="module">
+  import footerfun from "../footer/footer.js";
+  let footer = document.getElementById("footer-container");
+  footer.innerHTML = footerfun();
+</script>
+
+
+<script>
+  let item=document.getElementById("lybrate-cash-value-btn");
+  let flag=JSON.parse(localStorage.getItem("logintrue"))||false;
+  //console.log(flag)
+
+  if(flag===true)
+  {
+    item.style.color="green";
+    item.style.border="1px solid green"
+    item.innerText=`click on "Proceed to Payment"`;
+  }
+  else
+  {
+    item.style.color="#c8311e";
+    item.style.border="1px solid #c8311e";
+    item.innerText="Login/SignUp"
+  }
+
+  proceed-to-payment-btn
+</script>

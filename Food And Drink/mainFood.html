@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food & Drink | Lybrate</title>
+    <link rel="stylesheet" href="../header footer/shopingheader.css">
+    <link rel="icon" type="image/x-icon" href="https://www.lybrate.com/img/push-crew/logo_192_by_192.png">
+    <link rel="stylesheet" href="../footer/footer.css">
+     <link rel="stylesheet" href="../main css for all product/main css for all.css">
+
+</head>
+<body>
+  <div id="header-container"></div>
+    <!-- below given window siliding html -->
+
+    <div id = "slideshow">
+
+    </div>
+
+    <div id="filter-maincontainer">
+
+        <div id="left-filter">
+          <div id="left-filter-child">
+            <div id="filter-child2">
+                <h5>Filter By</h5>
+            </div>
+            <div id="clear-all">
+                <h5 id="clear">CLEAR ALL</h5>
+            </div>
+          </div>
+            <hr id="hr1"/>
+    
+        </div>
+
+        <div id="right-filter">
+            <div id="filterhome">
+                <a href=""> <p style="color:#c82506">Home</p></a>
+                <a href=""> <p>></p></a>
+                <a href=""><p id="goodkart"style="color:#c82506">Goodkart</p> </a>
+                <a href=""> <p>></p></a>
+                <a href=""><p>Child Care</p></a>
+            </div>
+
+            <div id = "Sexual">
+                <p>Food & Drink</p>
+
+            </div>
+
+            <div id = "Sort-By">
+              <div>
+                <ly-svg-icon p="sort-descending" class="ly-svg--md ng-isolate-scope"><svg xmlns="http://www.w3.org/2000/svg" height="25px" width="25px" fill="black"  preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path ng-attr-d="{{$root.icons[ctrl.p]}}" d="M10,13V11H18V13H10M10,19V17H14V19H10M10,7V5H22V7H10M6,17H8.5L5,20.5L1.5,17H4V4H6V17Z"></path></svg></ly-svg-icon>
+                   <h6> Sort By</h6>
+
+              </div>
+                 <p>Popularity</p>
+                 <p id="para1">Price Low to High</p>
+                 <p id="para2">Price High to Low</p>
+                     
+            </div>
+            
+        </div>
+
+
+    </div>
+
+
+    <!-- blew given product page html -->
+    <div id="maincontainer">
+
+        <div id="shortingContainer">
+
+            <div id="overlay"></div>
+
+            <div id="container">
+              
+                <div class="multipleSelection">
+                  <div class="selectBox" onclick="price()">
+                    <div id="price">
+                      <p>Price</p>
+                    </div>
+                  </div>
+                  <div id="pricelist">
+                    <label for="first">
+                      <input type="checkbox" id="search1"/>     
+                     Under ₹200
+                    </label>
+        
+                    <label for="second">
+                      <input type="checkbox" id="search2"  />
+                      ₹200 to ₹500
+                    </label>
+                    <label for="third">
+                      <input type="checkbox"  id="search3" />
+                      ₹500 to ₹1000
+                    </label>
+                    <label for="fourth">
+                        <input type="checkbox"  id="search4" />
+                        Above ₹1000
+                      </label>
+                    
+                  </div>
+                </div>
+                <hr />
+                <div class="multipleSelection">
+                  <div class="selectBox" onclick="price()">
+                    <div id="price">
+                      <p>Brand:</p>
+                    </div>
+                  </div>
+        
+                  <div id="brandlist">
+                    <label for="first">
+                      <input type="checkbox" onclick="myfunctionB1('Butterfly')" id="search" />
+                      Butterfly
+                    </label>
+        
+                    <label for="second">
+                      <input type="checkbox" onclick="myfunctionB2('Nourish')" id="search" />
+                      Nourish
+                    </label>
+        
+                    <label for="third">
+                      <input type="checkbox" onclick="myfunctionB3('Farm')" id="search" />
+                      Farm
+                    </label>
+        
+                    <label for="fourth">
+                      <input type="checkbox" onclick="myfunctionB4('Saffola')" id="search" />
+                      Saffola
+                    </label>
+        
+                    <label for="five">
+                      <input type="checkbox" onclick="myfunctionB5('Zerobeli')" id="search" />
+                      Zerobeli
+                    </label>
+        
+                    <label for="six">
+                      <input type="checkbox" onclick="myfunctionB6('Vanantara')"  id="search" />
+                      Vanantara
+                    </label>
+        
+                    <label for="seven">
+                      <input type="checkbox" onclick="myfunctionB7('Onelife')" id="search" />
+                      Onelife
+                    </label>
+        
+                    <!-- <label for="eigtht">
+                      <input type="checkbox" onclick="myfunction('Add')" id="search" />
+                      Add Veda
+                    </label>
+                      <label for="nine">
+                        <input type="checkbox" onclick="myfunction('Butterfly')" id="search" />
+                       Butterfly Ayurveda
+                      </label>
+                      <label for="ten">
+                        <input type="checkbox" onclick="myfunction('Carmine')" id="search" />
+                        Carmine Country
+                      </label>
+                      <label for="eleven">
+                        <input type="checkbox" onclick="myfunction('Maheshwari')" id="search" />
+                        Maheshwari Pharmaceuticals
+                      </label>
+                      <label for="twelve">
+                        <input type="checkbox" onclick="myfunction('Onelife')" id="search" />
+                        Onelife
+                      </label>
+                      <label for="thirteen">
+                        <input type="checkbox" onclick="myfunction('Healthcare')" id="search" />
+                        QAAF Healthcare international
+                      </label>
+                      <label for="fourteen">
+                        <input type="checkbox" onclick="myfunction(' Body ')" id="search" />
+                        Body and Herbs
+                      </label>
+                      <label for="fiveteen">
+                        <input type="checkbox" onclick="myfunction(' Daily')" id="search" />
+                        Daily Heatth Nutriton
+                      </label>
+                      <label for="sixteen">
+                        <input type="checkbox" onclick="myfunction('DNPL')" id="search" />
+                        DNPL
+                      </label>
+                      <label for="seventeen">
+                        <input type="checkbox" onclick="myfunction('Herbal')" id="search" />
+                        Herbal Vibe
+                      </label>
+                      <label for="eigthteen">
+                        <input type="checkbox" onclick="myfunction('Lupin')" id="search" />
+                        Lupin
+                      </label>
+                      <label for="nineteen">
+                        <input type="checkbox" onclick="myfunction('Millenium')" id="search" />
+                        Millenium Herbal Care 
+                      </label>
+                      <label for="eigth">
+                        <input type="checkbox" onclick="myfunction('Muscle')" id="search" />
+                        Muscle Monk
+                      </label><label for="eigth">
+                        <input type="checkbox" onclick="myfunction('Neuherbs')" id="search" />
+                        Neuherbs
+                      </label>
+                      <label for="eigth">
+                        <input type="checkbox" onclick="myfunction('Shree')" id="search" />
+                       Shree Dhootpapeshwar
+                      </label> -->
+
+                  </div>
+                </div>
+                <hr />
+        
+                <div class="multipleSelection">
+                  <div class="selectBox" onclick="discount()">
+                    <div id="price">
+                      <p>Discount</p>
+                    </div>
+                    <!-- <div class="overSelect"></div> -->
+                  </div>
+        
+                  <div id="discountlist">
+                    <label for="first">
+                      <input type="checkbox" id="searchD1" />
+                      10% or more
+                    </label>
+                    <label for="second">
+                      <input type="checkbox" id="searchD2" />
+                      20% or more
+                    </label>
+                    <label for="third">
+                      <input type="checkbox"  id="searchD3" />
+                      30% or more
+                    </label>
+                    <label for="third">
+                        <input type="checkbox"  id="searchD4" />
+                        40% or more
+                      </label>
+                      <label for="third">
+                        <input type="checkbox" id="searchD5" />
+                        50% or more
+                      </label>
+                      <label for="third">
+                        <input type="checkbox"  id="searchD6" />
+                        60% or more
+                      </label>
+                  </div>
+                </div>
+
+              
+        
+              <div id="productarray"></div>
+            </div>          
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+        
+
+        <div id="productcontainer">
+
+            <div id="main">
+          
+            </div>
+        </div>
+        
+    </div>
+
+
+
+    <div  id="main-dowm-paragraph">
+        <div id="dowm-paragraph">
+            <p>
+               <b> Disclaimer :</b>  While we ensure that all product information on the platform is complete and accurate,
+                however, we advise you not to solely rely on this information. It is recommended to refer to the product 
+                manual and/or specifications provided by the manufacturer either on their website or along with the product. 
+                This is applicable for all warnings, labels, ingredients and usage directions as well. The use of any i
+                nformation provided on this platform is solely at the user's risk. Nothing contained on this platform shall
+                 be considered as medical advice. Consumers are advised to contact the manufacturer for any further
+                  information and assistance. The results from the 
+               products will vary from person to person, No individual result should be seen as typical.
+            </p>
+        </div>
+
+    </div>
+    <div id ="dowm-paragraph2" >
+        <div id="dowm-paragraph2-child" >
+             <h4>Buy Baby Care Products Online In India | Lybrate</h4>
+
+             <p>
+                Parenthood is nothing short of a life-changing experience. 
+                The most remarkable thing you can ever do is nurture a tiny little human being. Keeping your baby
+                 in good health is one of the most important phases post-birth. Paying attention to your baby's well-being 
+                 is not that easy as baby care is a broad term and covers a lot of aspects including baby’s
+                 skin & hair care, their bath essentials, oral health products, and baby’s nutrition products.
+             </p>
+
+             <p>
+                Sometimes finding just the right baby care products can be a herculean task in itself.
+                 At GoodKart, we have an assemblage of best baby care products for your little ones. These baby 
+                 products are designed keeping in mind the needs of infants and children. GoodKart also has an array 
+                 of newborn baby products online, precisely formulated from ingredients that are gentle and non-irritating.
+                  Explore a wide range of Child care products and the list includes various easily digestible healthy and 
+                  tasty snacks made up of natural ingredients and health supplements for complete nutrition requirements. 
+                  Also, check out baby care products online used while bathing and take care of baby sensitive skin with 
+                  natural baby 
+                skincare products including natural vitamins and minerals oils for complete nourishment to the baby’s skin.
+             </p>
+
+   
+
+             <h1>WHAT ARE THE DIFFERENT TYPES OF BABY CARE PRODUCTS?</h1>
+
+             <ul>
+                 <li>
+                    <b> Baby Bath Essentials:</b> Bath time with your baby can be a fun bonding session with the
+                      best bath essentials by your side. When it comes time to get your baby clean, try baby
+                       bath essentials available at GoodKart for hair and body that have the tear-free formula
+                     which gently cleanses your baby skin without causing any dryness.
+                    </li>
+                 <li>
+                     <b>Baby Skin and Hair Care Products:</b> Your baby’s skin plays a key role in maintaining internal
+                      temperature and defending against harmful bacteria, germs, and irritants. We have a multitude 
+                      of top-notch products at
+                      GoodKart that will keep their skin and hair healthy and beautiful for the rest of their lives.
+                    </li>
+                 <li>
+                   <b> Baby Oral Health Products:</b> Paying close attention to your baby’s dental care is more
+                     significant than many parents realize. Good dental care for babies should start from
+                      birth to get them accustomed to the whole procedure. 
+                    Top-hole oral care products designed especially for children are available at GoodKart.
+                    </li>
+                 <li>
+                   <b> Baby Nutrition Products:</b> When it’s time for complementary foods, how can you feed your child 
+                    in a nutritious way? Well, a good diet is key if you want to increase immunity in a child naturally 
+                    and to promote healthy eating habits. To keep you sorted, we have an array of food products for baby’s 
+                    nutrition at GoodKart that promotes bone, 
+                    muscle and brain development. All of these products are clinically tested to be safe for babies.
+                 </li>
+                 <li>
+                   <b> Baby Health Care Products:</b> Newborn baby care is a delicate affair. 
+                    You'll want to use the smallest bit of lotion and the mildest cleansers.
+                     At GoodKart, we have an assortment of newborn baby health care products for nervous 
+                    first-time parents to be able to look after their newborn with plenty of confidence and care.
+                 </li>
+                 <li>  <b>Baby Bedding & Nursery:</b> y Looking after a baby is a big responsibility and cherry-picking
+                      the right products for them is a tough job. For the proper care of babies,
+                      we have included baby bedding and a complete set of the nursery.</li>
+                <p>
+                    Now in Goodkart, shop Online all baby care products from one place. We are offering 
+                    all baby products of the best quality from the finest collections of kid's products. In this 
+                    personal section of baby care, you can buy oils, lotions, shampoos, moisturizers, oral care products, 
+                    baby care kit, health care products, and healthy nutritious food and Snacks for infants and kids.
+                </p>
+             </ul>
+
+              <h1>HOW TO TAKE CARE OF A NEWBORN BABY?</h1>
+               
+             <ul>
+
+                <li>
+                    Overwhelmed is a term that expresses how you may feel when you bring home your newborn!
+                     You're obliged to have doubts about everything from breastfeeding to bathing your baby and changing 
+                     their nappy, if new to the journey of parenthood. 
+                     Confusion might scurry through the mind as you try to meet all of your baby’s needs.
+                </li>
+                <li>
+                    A newborn can be extremely challenging for the first few days and it may seem like
+                     an endless round of breastfeeding and changing diapers.
+                     Here is the basic care that your baby needs during these early days
+                </li>
+                <li>
+                    Newborn babies do not arrive with a guidance manual, and to begin with, it is completely 
+                    normal to have lots of questions about their health and development.
+                </li>
+                <li>
+                    Breastfeed your baby as frequently as they want and probably you and your baby will get into a pattern.
+                     Let them decide when they are full and the amount of milk you produce will alter, accordingly.
+                </li>
+                <li>
+                    In the first few days, wash your baby’s face, hands and bottom carefully.
+                     You may need warm water, a towel, fresh nappy and clean clothes.
+                </li>
+                <li>
+                    Your newborn requires regular nappy changes. Do not leave them in
+                     a dirty nappy for too long as this can cause skin soreness or nappy rash.
+                </li>
+                <li>
+                    It's common for new babies to sleep only for 2 to 3 hours in the night, 
+                    as well as during the day since babies are not tuned into day and night yet. 
+                    As your baby grows, they'll gradually start to sleep for longer at night.
+                </li>
+             </ul>
+             
+             <h1>
+                HOW TO SELECT BABY CARE PRODUCTS ONLINE?
+             </h1>
+             <p>
+                Before picking up any baby product online, it is vital to always check the product reviews.
+                 Buy products from a trusted baby care brand that ensures to use high-quality ingredients
+                  that are safe and mild for your little ones. Choose a natural or organic product over 
+                  chemical-based and look out for those products that have some certifications. In the case
+                   of healthy food products for infants and kids, always check the ingredients that are natural and
+                    contain nutritional values. Check whether any kind of artificial flavor, color and preservatives
+                     are added or not harmful for child health. Buy natural and organic baby care products safe for
+                      the baby body and no harmful side effects that can trouble the child. We understand the importance
+                       of giving a child the
+                 right nutrition and hence any compromise on this parameter can affect the baby’s health.
+             </p>
+             <h1>
+                BUY BABY CARE PRODUCTS ONLINE INDIA AT LYBRATE GOODKART
+             </h1>
+             <p>
+                Being a parent is the most demanding job with full-time dedication. It comes with no prior experience 
+                or life manual to assist you through the way. Parenting is as challenging as it is rewarding. Taking care 
+                of a newborn can get a bit overwhelming, particularly if it is your first time as a parent. From diaper 
+                changes to feeding patterns, parenthood takes quite a toll on your life. Parents want to give their
+                 children the best of everything. To solve every parent’s dilemma of what is best for their child,
+                  we have assembled pure and mild childcar
+                products at Goodkart to nurture your little one and make parenting stress-free.
+             </p>
+             <p>
+                Check out the wide collection of best baby products for newborns, infants,
+                 and kids online in Goodkart. We have numerous baby care nutrition products from top 
+                 brands like Timios, Mimmo Organics, Ironstein, Snec30, Rustic Art Saffola Fittify and 
+                 many more offering various Baby Oral Health, Bath Essentials, Baby Skincare products, and
+                  nutrition food supplements for different age groups. While Shopping online in Goodkart,
+                   get different combo deals, offers, and discounts not only on baby care products but also
+                    on other health care products for infants & kidsAt Goodkart, We assured Best Quality and
+                     Safe Baby products online, 
+                all baby care products are authentic and get assured best prices in India on GoodKart platform. 
+             </p>
+            
+        </div>
+    </div>
+    <div id="footer-container"></div>
+</body>
+</html>
+<script type="module">
+  import shoppingheader from '../header footer/shoppingheader.js';
+  let header_container=document.getElementById("header-container");
+  header_container.innerHTML=shoppingheader();
+
+
+  countcartfn();
+  function countcartfn()
+  {
+      let cartdata=JSON.parse(localStorage.getItem("cart"))||[];
+      
+      let cartcount=document.getElementById("cart-count");
+      cartcount.innerText=null;
+      cartcount.innerText=cartdata.length;
+      localStorage.setItem("cart", JSON.stringify(cartdata));
+  };
+</script>
+<script src="../header footer/inputsearch.js"></script>
+<script src="../header footer/shoppingheader other js.js"></script>
+<script src="../header footer/shoppingheader.js"></script>
+<script src="./mainfood.js" >
+
+</script>
+<script type="module">
+  import footerfun from "../footer/footer.js";
+  let footer=document.getElementById("footer-container");
+  footer.innerHTML=footerfun();
+</script>

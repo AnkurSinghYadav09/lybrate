@@ -7,8 +7,6 @@
     #header-container
     {
         margin-bottom: 8px;
-        background-color: white;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
     #navbar
     {
@@ -30,6 +28,7 @@
         margin: auto;
         height: 33px;
         align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
     #category>div>div
     {
@@ -39,14 +38,11 @@
         font-size: 14px;
         font-weight: 600;
     }
-    #category>div>div>a
-    {
-        color: white;
-        text-decoration: none;
-    }
-    #imagelogo>a
+
+    #imagelogo
     {
         width: 13%;
+        cursor: pointer;
         display: flex;
         align-items: center;
     }
@@ -68,7 +64,7 @@
     #navbarsearch
     {
         padding: 8px 36px 6px 10px;
-        /* height: 25px; */
+        height: 25px;
         width: 85%;
         background-color: rgb(222,222,222);
         border: none;
@@ -89,10 +85,6 @@
         align-items: center;
         justify-content: space-between;
         font-size: 14px;
-    }
-    #left-itemsi-in-navbar>a
-    {
-        text-decoration: none;
     }
     #top-dropdown
     {
@@ -132,11 +124,6 @@
         cursor: pointer;
         width: 60px;
     }
-    #left-itemsi-in-navbar>div>button>a
-    {
-        text-decoration: none;
-        color: black;
-    }
     #cart-count
     {
         margin-right: -21px;
@@ -152,7 +139,6 @@
         position: absolute;
         right: 73%;
         top: 14%;
-        z-index: 1;
         height: auto;
         border-radius: 3px;
         background-color: white;
@@ -167,13 +153,7 @@
         display: flex;
         gap: 10px;
         align-items: center;
-        z-index: 1;
     }
-    /* #shop-by-category-drop>div>div>a
-    {
-        position:absolute;
-        z-index: 100%;
-    } */
     #shop-by-category-drop>div
     {
         display: flex;
@@ -203,10 +183,6 @@
     #shop-by-category-drop>div>div>p, #swellness-drop>p, #food-drop>p, #vitamis-drop>p, #weight-drop>p, #child-drop>p
     {
         font-weight: 400;
-    }
-    #shop-by-category-drop>div
-    {
-        z-index: 1;
     }
     #food-drop
     {

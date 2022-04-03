@@ -1,0 +1,312 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap'); 
+body{
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+}
+
+#sexualwellness{
+    display: flex;
+   justify-content: center;
+}
+#leftSideDiv{
+    height: 550px;
+    width: 170px;
+    
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.leftsideimg{
+    height: 130px;
+    width: 120px;
+    border: 1px solid #dde0e0;
+    margin-top:10px;
+    margin-left: 15px;
+    border-radius: 5px;
+}
+#centreSideDiv{
+    
+    height: 600px;
+    width: 470px;
+    
+}
+.centrebutton{
+    margin-top: 25px;
+    font-size:18px;
+    display: flex;
+    justify-content:space-around;
+}
+.addtoCard{
+    color: #c82506;
+    background-color: white;
+    border: 2px solid #c82506;
+    font-weight: 580;
+    font-size:16px;
+    width: 210px;
+    height: 60px;
+    border-radius: 5px;
+}
+.buynow{
+    background-color:#259b24;
+    color: white;
+    font-weight: 580;
+    font-size:16px;
+    width: 210px;
+    height: 60px;
+    border-radius: 5px;
+    border:none;
+}
+.centerimg{
+    height: 500px;
+    width: 100%;
+}
+#rightSideDiv{
+    /* height: 800px; */
+    width: 520px;
+    margin-left: 20px;
+    
+}
+.productName>h1{
+   font-size:20px;
+   font-weight: 550;
+}
+.special{
+    margin-top: 1px;
+    font-size:14px;
+    color:#259b24;
+    
+
+ }
+.priceId{
+    display: flex;
+    gap:20px;
+    
+    height: 40px;
+    margin-top:-10px
+    
+   
+}
+.priceId>p{
+    
+    margin-top: -5px;
+    
+}
+.priceId>p:nth-child(1){
+    
+  
+   color: black;
+   font-size :30px;
+   font-weight: 550;
+}
+.priceId>p:nth-child(2){
+    color: rgb(93, 93, 93);
+    margin-top: 10px;
+   font-size: 15px;
+   font-weight: 550;
+   text-decoration: line-through;
+}
+.priceId>p:nth-child(3){
+    margin-top: 10px;
+   font-size: 15px;
+   font-weight: 550;
+   color: #259b24;
+}
+.goldratingdiv{
+   display: flex;
+   margin-top: -8px;
+   
+   height: 55px;
+   
+
+}
+.rating{
+    border: 1px solid green;
+    height: 28px;
+    width: 38px;
+    text-align: center;
+    background-color:#259b24;
+    color: white;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 16px;
+    font-weight: 520;  
+}
+.goldrating{
+    border: 1px solid #dce0e0;
+    height: 28px;
+    /* width: 135px; */
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 550;
+    color:#6c6a6a;
+}
+
+.goldmember{
+   margin-top: 10px;
+   height: 80px;
+   width: 100%;
+   
+   /* background-color:#dce0e0; */
+   background-color:whitesmoke;
+   border-radius: 7px;
+   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+
+}
+.goldmember:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.goldmemberp1{
+    color:black;
+    margin-left: 10px;
+    margin-right: 60px;
+    margin-top: 1px;
+    font-size: 17px;
+    font-weight: 510;
+
+
+}
+.goldmemberp2{
+    color:#545252;
+    font-weight: 500;
+    margin-left: 10px;
+    margin-top: -15px;
+    font-size: 14px;
+
+}
+.prodDescription{
+    
+  color:#6c6a6a;
+  font-size: 16px;
+  font-weight: 500;  
+}
+
+.logodiv1{
+    
+    height: 40px;
+    display: flex;
+}
+
+.logodiv2{
+    
+    display: flex;
+    height: 50px;  
+}
+.material-icons{
+   font-size :20px;
+   color:#6c6a6a;
+}
+.logop1{
+    margin-top: 12px;
+    margin-left: 12px;
+    color:#6c6a6a;
+    font-weight: 500;
+    font-size: 17px;
+}
+.logop2{
+    margin-top: 12px;
+    margin-left: 12px;
+    color:#6c6a6a;
+    font-weight: 500;
+    font-size: 17px;
+}
+.pincodediv{
+    display: flex;
+    margin-bottom: 20px;
+    /* height: 100px; */
+}
+.checkoutpudiv
+{
+    position: absolute;
+    font-size: 13px;
+    left: 63%;
+    top:91%
+}
+.pincodep1{
+    color:#6c6a6a;
+    font-size: 18px;
+    font-weight: 420;
+
+}
+.pincodeimput{
+    margin-left: 30px;
+    color:#6c6a6a;
+    height: 30px;
+    font-size: 16px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-top:16px;
+    background-color: transparent;
+
+}
+.pincodeimput:focus
+{
+    outline:none;
+}
+
+.pincodebtn{
+    color:#6c6a6a;
+    background-color:whitesmoke;
+    height: 33px;
+    font-size: 16px;
+    margin-left: 20px;
+    width: 100px;
+    border:none;
+    margin-top:15px;
+}
+
+.main_authantic_div{
+    display: flex;
+    justify-content:space-around;
+}
+
+
+.authantic-logo>span{
+    /*  */
+    height: 30px;
+    width: 25px;
+    align-items: center;
+    justify-content: center;
+    line-height: 31px;
+    border-radius:50%;
+    padding-left: 7px;
+    font-size:16px;
+    margin-left: 63px;
+    color:white;
+    background-color:#c82506
+}
+.authantic-logo1>span{
+    /*  */
+    height: 30px;
+    width: 25px;
+    align-items: center;
+    justify-content: center;
+    line-height: 31px;
+    border-radius:50%;
+    padding-left: 7px;
+    font-size:16px;
+    margin-left: 70px;
+    color:white;
+    background-color:#259b24;
+}
+.authantic-logo2>span{
+    /*  */
+    height: 30px;
+    width: 25px;
+    align-items: center;
+    justify-content: center;
+    line-height: 31px;
+    border-radius:50%;
+    padding-left: 7px;
+    font-size:16px;
+    margin-left:45px;
+    color:white;
+    background-color:#895b80;
+}
+.authantic_p1{
+    font-size:15px;
+    color:#6c6a6a;
+    margin-top: -10px;
+    font-weight:430;
+}

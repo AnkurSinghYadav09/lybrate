@@ -3,13 +3,13 @@ const inputsearch=async()=>
     try
     {
         let input=document.getElementById("navbarsearch").value;
-        inputarr=input.trim().split(" ");
-        for(let i=0; i<inputarr.length; i++)
+        input=input.trim().split(" ");
+        for(let i=0; i<input.length; i++)
         {
-            inputarr[i]=inputarr[i].toLowerCase();
+            input[i]=input[i].toLowerCase();
         }
         
-        //console.log(inputarr);
+        //console.log(input);
 
         let childcare=await fetch(`../API's/child care.json`)
         let childcaredata=await childcare.json();
@@ -91,23 +91,23 @@ const inputsearch=async()=>
 
             let name=arr[i].productName.trim().split(" ");
 
-            if(inputarr.length>1)
+            if(input.length>1)
             {
-                for(let k=0; k<inputarr.length; k++)
+                for(let k=0; k<input.length; k++)
                 {
                     for(let j=0; j<name.length; j++)
                     {
                         name[j]=name[j].toLowerCase();
 
-                        if(inputarr[0]===name[j])
+                        if(input[0]===name[j])
                         {
-                            //console.log(name[j], inputarr[k]);
+                            //console.log(name[j], input[k]);
                             flag1=true;
                         }
 
-                        if(inputarr[1]===name[j] && flag1===true)
+                        if(input[1]===name[j] && flag1===true)
                         {
-                            //console.log(name[j], inputarr[k]);
+                            //console.log(name[j], input[k]);
                             flag2=true;
                             break;
                         }
@@ -126,15 +126,15 @@ const inputsearch=async()=>
             }
             else
             {
-                for(let k=0; k<inputarr.length; k++)
+                for(let k=0; k<input.length; k++)
                 {
                     for(let j=0; j<name.length; j++)
                     {
                         name[j]=name[j].toLowerCase();
 
-                        if(inputarr[k]===name[j])
+                        if(input[k]===name[j])
                         {
-                            //console.log(name[j], inputarr[k]);
+                            //console.log(name[j], input[k]);
                             flag1=true;
                         }
                     }
@@ -151,20 +151,7 @@ const inputsearch=async()=>
                 }
             }
         }
-        
-        localStorage.setItem("searcheditems", JSON.stringify(bag));
-        localStorage.setItem("searchkeyword", input);
-
-        inputonfocus(bag, inputarr, defaultprod);
-
-        let searched=document.getElementById("navbarsearch");
-        searched.addEventListener("keypress", (event)=>
-        {
-            if(event.code==='Enter')
-            {
-                location.href="../search/searcheditems.html";
-            }
-        })
+        inputonfocus(bag, input, defaultprod);
     }
 
 
@@ -204,13 +191,6 @@ const inputonfocus=(data, input, defaultprod)=>
         {
             let focusdiv=document.getElementById("onfocuscontent");
             let div=document.createElement("div");
-            div.addEventListener("click", function()
-            {
-                let bag=[];
-                bag.push(ele);
-                localStorage.setItem("productAlldetails", JSON.stringify(bag));
-                location.href="../main localStorage for all p/mainLocalstorage.html";
-            })
 
             let img=document.createElement("img");
             img.src=ele.media[0].absoluteMediaPath;
@@ -237,13 +217,6 @@ const inputonfocus=(data, input, defaultprod)=>
             {
                 let focusdiv=document.getElementById("onfocuscontent");
                 let div=document.createElement("div");
-                //div.addEventListener("click", localStoragefn(ele));
-                // {
-                //     let bag=[];
-                //     bag.push(ele);
-                //     localStorage.setItem("productAlldetails", JSON.stringify(bag));
-                //     location.href="../main localStorage for all p/mainLocalstorage.html"
-                // });
 
                 let img=document.createElement("img");
                 img.src=ele.media[0].absoluteMediaPath;
@@ -259,20 +232,8 @@ const inputonfocus=(data, input, defaultprod)=>
 
 }
 
-function localStoragefn(ele)
-{
-    let bag=[];
-    bag.push(ele);
-    localStorage.setItem("productAlldetails", JSON.stringify(bag));
-    location.href="../main localStorage for all p/mainLocalstorage.html";
-}
 const inputonfocusout=()=>
 {
     let focusdiv=document.getElementById("onfocuscontent");
     focusdiv.innerHTML=null;
-}
-
-const tosearchpage=()=>
-{
-    location.href="../search/searcheditems.html";
 }

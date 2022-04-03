@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://www.lybrate.com/img/push-crew/logo_192_by_192.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="./mainLocalstorage.css">
+    <link rel="stylesheet" href="../footer/footer.css">
+    <link rel="stylesheet" href="../header footer/shopingheader.css">
+</head>
+<body>
+    <div id="header-container"></div>
+     <div id="sexualwellness">
+
+        <div id="leftSideDiv">
+
+        </div>
+
+        <div id="centreSideDiv">
+
+        </div>
+
+        <div id="rightSideDiv">
+
+        </div>
+
+     </div>
+    
+     <div id="footer-container"></div>
+</body>
+</html>
+
+<script src = "./mainLocalstorage.js">
+
+</script>
+<script type="module">
+    import footerfun from "../footer/footer.js";
+    let footer=document.getElementById("footer-container");
+    footer.innerHTML=footerfun();
+
+
+    countcartfn();
+  function countcartfn()
+  {
+      let cartdata=JSON.parse(localStorage.getItem("cart"))||[];
+      
+      let cartcount=document.getElementById("cart-count");
+      cartcount.innerText=null;
+      cartcount.innerText=cartdata.length;
+      localStorage.setItem("cart", JSON.stringify(cartdata));
+  };
+</script>
+
+<script type="module">
+    import shoppingheader from '../header footer/shoppingheader.js';
+    let header_container=document.getElementById("header-container");
+    header_container.innerHTML=shoppingheader();
+</script>
+<script src="../search/search.js"></script>
+<script src="../header footer/shoppingheader other js.js"></script>
+<script src="../header footer/inputsearch.js"></script>
+
+<script type="module">
+    import footerfun from "../footer/footer.js";
+    let footer=document.getElementById("footer-container");
+    footer.innerHTML=footerfun();
+  </script>
