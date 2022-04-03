@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Select Payment Methods</title>
+    <title>Select Payment Methods | Lybrate</title>
+    <link rel="icon" type="image/x-icon" href="https://www.lybrate.com/img/push-crew/logo_192_by_192.png">
+    <link rel="stylesheet" href="../footer/footer.css">
+    <link rel="stylesheet" href="../header footer/shopingheader.css">
     <style>
         #paymentPage{
             background-color: #eee;
@@ -82,7 +85,7 @@
             margin-top: 50px;
             font-size: larger;
         }
-       ul{
+       #order_summry>div>ul{
             color: gray;
             margin:-17px 0 0 -30px;
             font-size: small;
@@ -209,13 +212,15 @@
             margin-right: 20px;
 
         }
-    
-        
+        #footer-container{
+            margin-top: 50px;
+        } 
         </style>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         
 </head>
 <body>
+    <div id="header-container"></div>
     <div id="paymentPage">
         <h2 id="h1tag">Payment details</h2>
     <p id="covid_lines">We are experiencing a delay in the shipment as we are managing our teams and delivery partner for COVID-19 measures. Many thanks for cooperating.</p>
@@ -284,12 +289,20 @@
     </div>
 
     </div>
-    
+    <div id="footer-container"></div>
 </body>
 </html>
 <script>
     var totle_mrp= document.createElement("p");
-    totle_mrp.innerText=400;
+    let cartitems=JSON.parse(localStorage.getItem("cart"));
+    let total=0;
+    let wdisc=0;
+    for(let i=0; i<cartitems.length; i++)
+    {
+        total+=cartitems[i].priceDTO.price;
+        wdisc+=cartitems[i].priceDTO.mrp;
+    }
+    totle_mrp.innerText=wdisc;
     document.getElementById("totle_mrp").append(totle_mrp)
 
 
@@ -304,13 +317,15 @@
     
 
     var discount = document.createElement("p");
-    discount.innerText=100;
+    discount.innerText=wdisc-total;
     document.getElementById("discount").append(discount);
    console.log()
     
     var cart_total=document.createElement("p");
-    cart_total.innerHTML=Number(totle_mrp.innerText)+Number(shipping_charges.innerText)-Number(discount.innerText);
+    let yuy=Number(totle_mrp.innerText)+Number(shipping_charges.innerText)-Number(discount.innerText)
+    cart_total.innerText=`₹${yuy}`;
     document.getElementById("cart_total").append(cart_total);
+    localStorage.setItem("finalpayment", JSON.stringify(yuy));
     
 
     var amount_payable=document.createElement("p");
@@ -325,3 +340,30 @@
 
 
 </script>
+<script type="module">
+    import shoppingheader from "../header footer/shoppingheader.js";
+    let header_container = document.getElementById("header-container");
+    header_container.innerHTML = shoppingheader();
+  
+  
+    countcartfn();
+    function countcartfn()
+    {
+        let cartdata=JSON.parse(localStorage.getItem("cart"))||[];
+        
+        let cartcount=document.getElementById("cart-count");
+        cartcount.innerText=null;
+        cartcount.innerText=cartdata.length;
+        localStorage.setItem("cart", JSON.stringify(cartdata));
+    };
+  </script>
+  <script src="../search/search.js"></script>
+  <script src="../header footer/shoppingheader other js.js"></script>
+  <script src="../header footer/inputsearch.js"></script>
+  
+  
+  <script type="module">
+    import footerfun from "../footer/footer.js";
+    let footer = document.getElementById("footer-container");
+    footer.innerHTML = footerfun();
+  </script>

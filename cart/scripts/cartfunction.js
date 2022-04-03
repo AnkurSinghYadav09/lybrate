@@ -50,7 +50,7 @@ function display(getcart, total) {
     let newprice = (document.getElementById("price").innerText = `₹${total}`);
     let newdiscount = (document.getElementById("discount-price-display").innerText = `-₹${discounttotal-total}`);
     let newtotalmrp = (document.getElementById("total-price").innerText= `₹${discounttotal}`)
-    let newamountpayable = (document.getElementById("amount-payable-value").innerText= `₹${discounttotal}`)
+    let newamountpayable = (document.getElementById("amount-payable-value").innerText= `₹${total}`)
     // let newitemdisplay = (document.getElementById("no-of-items-ptag").innerText = elem.length;
   });
 }
